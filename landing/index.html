@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en-MY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harrington — Certified pre-owned tech, properly proven</title>
+<meta name="description" content="Harrington Recommerce: buy, sell, trade in and upgrade certified pre-owned tech in Malaysia. Every device tested, graded and backed by Harrington Certified.">
+<meta name="theme-color" content="#D02E23">
+<link rel="icon" href="assets/logo-tile.png">
+<link rel="stylesheet" href="assets/styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<!--
+  CONCEPT NOTE (Hvesmar Studio, Oct 2026)
+  This is a pitch concept, not a live store. All policies shown on the page
+  (12-month warranty, 7-day returns, 50+ point inspection, free shipping across
+  Malaysia, payment methods incl. FPX / Touch 'n Go eWallet / GrabPay / DuitNow /
+  instalments, trade-in payout timings, credit bonus) are PROPOSED policies for
+  discussion with Harrington. Prices, Score IDs, scores, testimonials and stats
+  are illustrative examples only. Product art is original SVG, not product photography.
+-->
+
+<!-- ============ SVG SPRITE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gSheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="gIpad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9FB6E8"/><stop offset=".5" stop-color="#6E6FD6"/><stop offset="1" stop-color="#E58FB6"/></linearGradient>
+    <linearGradient id="gPhone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB59E"/><stop offset=".55" stop-color="#D02E23"/><stop offset="1" stop-color="#4B1630"/></linearGradient>
+    <linearGradient id="gMac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#26324F"/><stop offset=".5" stop-color="#4E5FA8"/><stop offset="1" stop-color="#F0A27E"/></linearGradient>
+    <linearGradient id="gSwitch" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A5C"/><stop offset="1" stop-color="#B0241B"/></linearGradient>
+    <radialGradient id="gLens" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#5A6B92"/><stop offset=".6" stop-color="#1B2236"/><stop offset="1" stop-color="#0A0D16"/></radialGradient>
+  </defs>
+
+  <!-- Devices (viewBox 200x200) -->
+  <symbol id="d-ereader" viewBox="0 0 200 200">
+    <rect x="52" y="12" width="96" height="176" rx="13" fill="#1E1E20"/>
+    <rect x="52" y="12" width="96" height="176" rx="13" fill="url(#gSheen)"/>
+    <rect x="60" y="22" width="80" height="138" rx="2" fill="#ECE9E1"/>
+    <rect x="68" y="34" width="38" height="5" rx="2.5" fill="#6f6b64"/>
+    <g fill="#C3BEB4"><rect x="68" y="50" width="64" height="3" rx="1.5"/><rect x="68" y="58" width="60" height="3" rx="1.5"/><rect x="68" y="66" width="64" height="3" rx="1.5"/><rect x="68" y="74" width="52" height="3" rx="1.5"/><rect x="68" y="88" width="64" height="3" rx="1.5"/><rect x="68" y="96" width="62" height="3" rx="1.5"/><rect x="68" y="104" width="64" height="3" rx="1.5"/><rect x="68" y="112" width="44" height="3" rx="1.5"/><rect x="68" y="126" width="64" height="3" rx="1.5"/><rect x="68" y="134" width="58" height="3" rx="1.5"/></g>
+    <rect x="90" y="172" width="20" height="3" rx="1.5" fill="#3a3a3c"/>
+  </symbol>
+  <symbol id="d-kobo" viewBox="0 0 200 200">
+    <rect x="54" y="14" width="92" height="172" rx="12" fill="#2C4A5E"/>
+    <rect x="54" y="14" width="92" height="172" rx="12" fill="url(#gSheen)"/>
+    <rect x="61" y="22" width="78" height="142" rx="2" fill="#EDEAE2"/>
+    <rect x="68" y="34" width="30" height="5" rx="2.5" fill="#6f6b64"/>
+    <g fill="#C3BEB4"><rect x="68" y="50" width="64" height="3" rx="1.5"/><rect x="68" y="58" width="58" height="3" rx="1.5"/><rect x="68" y="66" width="64" height="3" rx="1.5"/><rect x="68" y="74" width="48" height="3" rx="1.5"/><rect x="68" y="88" width="64" height="3" rx="1.5"/><rect x="68" y="96" width="60" height="3" rx="1.5"/><rect x="68" y="104" width="64" height="3" rx="1.5"/><rect x="68" y="112" width="40" height="3" rx="1.5"/></g>
+    <rect x="80" y="124" width="40" height="28" rx="2" fill="#D8D3C8"/>
+    <text x="100" y="178" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="700" fill="#9DB3C2" letter-spacing="1">KOBO</text>
+  </symbol>
+  <symbol id="d-tablet" viewBox="0 0 200 200">
+    <rect x="38" y="10" width="124" height="180" rx="15" fill="#A9B8CF"/>
+    <rect x="41" y="13" width="118" height="174" rx="12.5" fill="#141416"/>
+    <rect x="47" y="19" width="106" height="162" rx="7" fill="url(#gIpad)"/>
+    <path d="M47 120 C80 100 110 150 153 118 V174 a7 7 0 0 1 -7 7 H54 a7 7 0 0 1 -7 -7z" fill="#fff" opacity=".16"/>
+    <g fill="#fff" opacity=".85"><rect x="56" y="30" width="22" height="22" rx="6"/><rect x="84" y="30" width="22" height="22" rx="6" opacity=".7"/><rect x="112" y="30" width="22" height="22" rx="6" opacity=".55"/><rect x="56" y="58" width="50" height="22" rx="6" opacity=".45"/></g>
+    <circle cx="100" cy="16" r="1.3" fill="#333"/>
+  </symbol>
+  <symbol id="d-phone" viewBox="0 0 200 200">
+    <rect x="62" y="8" width="76" height="184" rx="19" fill="#DCD4C6"/>
+    <rect x="65" y="11" width="70" height="178" rx="16.5" fill="#111"/>
+    <rect x="69" y="15" width="62" height="170" rx="13" fill="url(#gPhone)"/>
+    <path d="M86 15 h28 v4 a5 5 0 0 1 -5 5 h-18 a5 5 0 0 1 -5 -5z" fill="#111"/>
+    <text x="100" y="58" text-anchor="middle" font-family="Inter Tight,Inter,sans-serif" font-size="22" font-weight="700" fill="#fff">9:41</text>
+    <rect x="76" y="140" width="48" height="16" rx="8" fill="#fff" opacity=".28"/>
+    <rect x="90" y="178" width="20" height="2.5" rx="1.25" fill="#fff" opacity=".7"/>
+  </symbol>
+  <symbol id="d-laptop" viewBox="0 0 200 200">
+    <rect x="32" y="40" width="136" height="92" rx="7" fill="#2C3038"/>
+    <rect x="36" y="44" width="128" height="84" rx="3" fill="url(#gMac)"/>
+    <path d="M36 104 C70 88 110 120 164 96 V125 a3 3 0 0 1 -3 3 H39 a3 3 0 0 1 -3 -3z" fill="#fff" opacity=".1"/>
+    <rect x="94" y="44" width="12" height="4" rx="2" fill="#2C3038"/>
+    <rect x="70" y="118" width="60" height="6" rx="3" fill="#fff" opacity=".28"/>
+    <path d="M12 132 h176 l-6 9 a7 7 0 0 1 -6 3 H24 a7 7 0 0 1 -6 -3z" fill="#40454F"/>
+    <rect x="84" y="132" width="32" height="3.5" rx="1.75" fill="#2A2E35"/>
+  </symbol>
+  <symbol id="d-drone" viewBox="0 0 200 200">
+    <g stroke="#C9C5BD" stroke-width="9" stroke-linecap="round"><path d="M100 100 L50 56"/><path d="M100 100 L150 56"/><path d="M100 100 L50 144"/><path d="M100 100 L150 144"/></g>
+    <g fill="#1A1A1A" opacity=".07"><circle cx="50" cy="56" r="27"/><circle cx="150" cy="56" r="27"/><circle cx="50" cy="144" r="27"/><circle cx="150" cy="144" r="27"/></g>
+    <g fill="#3a3a3c"><rect x="26" y="53" width="48" height="6" rx="3" transform="rotate(25 50 56)"/><rect x="126" y="53" width="48" height="6" rx="3" transform="rotate(-25 150 56)"/><rect x="26" y="141" width="48" height="6" rx="3" transform="rotate(-25 50 144)"/><rect x="126" y="141" width="48" height="6" rx="3" transform="rotate(25 150 144)"/></g>
+    <g fill="#1d1d1f"><circle cx="50" cy="56" r="6"/><circle cx="150" cy="56" r="6"/><circle cx="50" cy="144" r="6"/><circle cx="150" cy="144" r="6"/></g>
+    <rect x="77" y="66" width="46" height="76" rx="19" fill="#E6E3DD" stroke="#CFCAC1" stroke-width="2"/>
+    <rect x="89" y="96" width="22" height="28" rx="7" fill="#D6D2CA"/>
+    <circle cx="100" cy="64" r="10" fill="#1d1d1f"/><circle cx="100" cy="64" r="5" fill="url(#gLens)"/>
+    <circle cx="100" cy="134" r="2.2" fill="#D02E23"/>
+  </symbol>
+  <symbol id="d-headphones" viewBox="0 0 200 200">
+    <path d="M50 116 C48 46 152 46 150 116" fill="none" stroke="#CFC8BC" stroke-width="13" stroke-linecap="round"/>
+    <path d="M56 104 C58 58 142 58 144 104" fill="none" stroke="#E9E4DB" stroke-width="4" stroke-linecap="round"/>
+    <rect x="45" y="88" width="11" height="22" rx="5" fill="#B9B2A6"/><rect x="144" y="88" width="11" height="22" rx="5" fill="#B9B2A6"/>
+    <rect x="30" y="100" width="40" height="70" rx="19" fill="#DED8CE"/><rect x="38" y="107" width="24" height="56" rx="12" fill="#CBC4B8"/>
+    <rect x="130" y="100" width="40" height="70" rx="19" fill="#DED8CE"/><rect x="138" y="107" width="24" height="56" rx="12" fill="#CBC4B8"/>
+    <rect x="30" y="100" width="40" height="70" rx="19" fill="url(#gSheen)"/><rect x="130" y="100" width="40" height="70" rx="19" fill="url(#gSheen)"/>
+  </symbol>
+  <symbol id="d-switch" viewBox="0 0 200 200">
+    <path d="M50 60 H35 a17 17 0 0 0 -17 17 v46 a17 17 0 0 0 17 17 h15z" fill="#F0EFEC" stroke="#DAD6CF" stroke-width="1.5"/>
+    <path d="M150 60 h15 a17 17 0 0 1 17 17 v46 a17 17 0 0 1 -17 17 h-15z" fill="#F0EFEC" stroke="#DAD6CF" stroke-width="1.5"/>
+    <rect x="50" y="60" width="100" height="80" rx="3" fill="#161617"/>
+    <rect x="56" y="66" width="88" height="68" rx="2" fill="url(#gSwitch)"/>
+    <path d="M56 112 C80 100 110 126 144 104 V132 a2 2 0 0 1 -2 2 H58 a2 2 0 0 1 -2 -2z" fill="#fff" opacity=".14"/>
+    <circle cx="34" cy="82" r="7.5" fill="#2a2a2a"/><circle cx="166" cy="114" r="7.5" fill="#2a2a2a"/>
+    <g fill="#3a3a3c"><circle cx="34" cy="106" r="3"/><circle cx="34" cy="120" r="3"/><circle cx="27" cy="113" r="3"/><circle cx="41" cy="113" r="3"/><circle cx="166" cy="76" r="3"/><circle cx="166" cy="90" r="3"/><circle cx="159" cy="83" r="3"/><circle cx="173" cy="83" r="3"/></g>
+  </symbol>
+  <symbol id="cos-phone" viewBox="0 0 120 220">
+    <rect x="10" y="6" width="100" height="208" rx="22" fill="#2A2C31"/>
+    <rect x="13" y="9" width="94" height="202" rx="19" fill="#383B42"/>
+    <rect x="20" y="17" width="44" height="44" rx="13" fill="#2C2F35"/>
+    <circle cx="32" cy="29" r="8" fill="#111" stroke="#4a4d54" stroke-width="2"/><circle cx="52" cy="49" r="8" fill="#111" stroke="#4a4d54" stroke-width="2"/><circle cx="53" cy="27" r="3" fill="#E9E1C8"/>
+  </symbol>
+  <!-- Icons (24x24, stroke) -->
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></g></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8a3 3 0 0 1 6 0"/></g></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3l7.5 3v6c0 4.6-3.1 7.7-7.5 9-4.4-1.3-7.5-4.4-7.5-9V6z"/><path d="M8.8 12.2l2.2 2.2 4.3-4.4"/></g></symbol>
+  <symbol id="i-return" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h11a5 5 0 0 1 0 10H8"/><path d="M8 5L4 9l4 4"/></g></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4.5" width="14" height="16.5" rx="2.5"/><path d="M9 3h6v3H9z"/><path d="M9 13l2 2 4-4.2"/></g></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5h11v10h-11z"/><path d="M13.5 9.5h4l3 3.2v3.8h-7"/><circle cx="6.5" cy="17.5" r="2" fill="#FBEAE7"/><circle cx="16.5" cy="17.5" r="2" fill="#FBEAE7"/></g></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10h18"/><path d="M15.5 14.5h2"/></g></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.5L5 13.5h6l-1 8 8-11h-6z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-medal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="9" r="6"/><path d="M8.6 14l-1.6 7 5-2.8 5 2.8-1.6-7"/><path d="M10 9l1.5 1.5L14.5 7.5"/></g></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"><path d="M6.5 3h8l4.5 4.5V21h-12.5z"/><path d="M14.5 3v4.5H19"/><path d="M9.5 12.5h6M9.5 16.5h4"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></g></symbol>
+  <symbol id="i-call" viewBox="0 0 24 24"><path d="M5 4h3.5l2 5-2.4 1.5a11 11 0 0 0 5.4 5.4L15 13.5l5 2V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.2 4.2 0 0 1 12 7.3a4.2 4.2 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9h-5.5v-6h-5v6H4z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19.5C5 10.5 11 5 20 5c0 9-5.5 15-14 15"/><path d="M5 19.5l7.5-7.5"/></g></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M3 12.5V4h8.5L21 13.5 13.5 21z"/><circle cx="7.5" cy="8.5" r="1.6"/></g></symbol>
+  <symbol id="i-cycle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 11a7.5 7.5 0 0 1 13.4-3.6L20 9.5"/><path d="M20 4.5v5h-5"/><path d="M19.5 13a7.5 7.5 0 0 1-13.4 3.6L4 14.5"/><path d="M4 19.5v-5h5"/></g></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9.5L4 20.5z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.8v.2"/></g></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M3.5 17a8.5 8.5 0 1 1 17 0"/><path d="M12 17l4.5-5.5"/></g></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g></symbol>
+  <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></symbol>
+</svg>
+
+<!-- ============ ANNOUNCEMENT + NAV ============ -->
+<div class="announce"><b>Free shipping across Malaysia</b><span class="hide-sm">, Semenanjung, Sabah &amp; Sarawak</span> · Every device has its own Score ID <span class="mono hide-sm">HC-XXXX-XXXXX</span></div>
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="#top" class="logo-tile" aria-label="Harrington home"><img src="assets/logo-tile.png" alt="Harrington" width="832" height="321"></a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="#shop">Shop</a>
+      <a href="#trade">Sell / Trade-in</a>
+      <a href="#certified">Harrington Certified</a>
+      <a href="#faq">Support</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn" aria-label="Search"><svg><use href="#i-search"/></svg></button>
+      <button class="icon-btn" aria-label="Wishlist"><svg><use href="#i-heart"/></svg></button>
+      <button class="icon-btn" aria-label="Cart, 2 items"><svg><use href="#i-cart"/></svg><span class="cart-count" id="cartCount">2</span></button>
+      <a href="#trade" class="btn btn--red btn--sm nav__cta">Jom trade in</a>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#shop">Shop</a><a href="#trade">Sell / Trade-in</a><a href="#certified">Harrington Certified</a><a href="#lookup">Score ID lookup</a><a href="#faq">Support</a>
+    <a href="#trade" class="btn btn--red">Jom trade in</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <div class="pill"><span class="pill__tag">NEW</span> Certified pre-owned tech, tested in KL</div>
+      <h1>Pre-loved tech, <span class="line2">properly proven.<svg class="swash" viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden="true"><path d="M3 17 C 90 4, 220 4, 397 12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span></h1>
+      <p class="lede">Every device tested, graded and backed by Harrington Certified. Two honest grades, a full inspection report and a Score ID you can check yourself before you pay.</p>
+      <div class="hero__ctas">
+        <a href="#products" class="btn btn--red">Shop certified tech <svg><use href="#i-arrow"/></svg></a>
+        <a href="#trade" class="btn btn--ghost">Get a trade-in quote</a>
+      </div>
+      <div class="hero__try">Peek at a real report: <a href="#lookup" data-id="HC-2610-04821">HC-2610-04821</a></div>
+    </div>
+
+    <div class="hero__visual" aria-label="Example Harrington inspection report over a certified e-reader">
+      <div class="hero__panel">
+        <div class="grid-lines"></div>
+        <img class="ghost-script" src="assets/logo-white.png" alt="">
+      </div>
+      <div class="stamp" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"/></defs><text font-family="JetBrains Mono,monospace" font-size="9.6" font-weight="700" letter-spacing="2.6" fill="#fff"><textPath href="#circ">HARRINGTON CERTIFIED · TESTED · GRADED ·</textPath></text></svg>
+        <div class="core"><svg><use href="#i-shield"/></svg></div>
+      </div>
+      <div class="kindle">
+        <div class="kindle__screen">
+          <small>Chapter 2</small>
+          <h4>The Second Owner</h4>
+          <p>It arrived in a red box, wrapped like a gift, with a single folded sheet inside: every test it had passed, every mark it carried, and a number that was entirely its own.</p>
+          <p>She read the report twice. Then she stopped worrying and started reading.</p>
+          <div class="pg">Loc 214 · 31%</div>
+        </div>
+      </div>
+      <div class="score-chip">
+        <div class="ring" data-score="94"><svg viewBox="0 0 64 64"><circle class="trk" cx="32" cy="32" r="27"/><circle class="val" cx="32" cy="32" r="27" stroke-dasharray="169.65" stroke-dashoffset="169.65"/></svg><b>94</b></div>
+        <div><small>Harrington Score</small><strong>94 / 100<br>Excellent</strong></div>
+      </div>
+      <div class="report-card">
+        <div class="rc__top"><span class="live">Inspection report</span><span class="rc__ok"><svg><use href="#i-check"/></svg>Verified</span></div>
+        <div class="rc__device">Kindle Paperwhite</div>
+        <div class="rc__sub">11th Gen · 16GB · Black</div>
+        <div class="rc__id">HC-2610-04821 <span>SCORE ID</span></div>
+        <div class="rc__grid">
+          <div class="rc__cell"><label>Functional</label><strong><span class="gchip gchip--a">A</span>Grade A</strong></div>
+          <div class="rc__cell"><label>Cosmetic</label><strong>Pristine</strong></div>
+          <div class="rc__cell"><label>Battery health</label><strong class="mono">96%</strong><div class="bar"><i style="width:96%"></i></div></div>
+          <div class="rc__cell"><label>Checks passed</label><strong class="mono">52/52</strong><div class="bar"><i style="width:100%"></i></div></div>
+        </div>
+        <div class="rc__foot"><span>Inspected 02 Oct 2026</span><span>KL Lab</span></div>
+      </div>
+      <div class="warranty-chip"><i><svg><use href="#i-shield"/></svg></i>12-month warranty</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<!-- PROPOSED POLICIES for discussion with the client (not yet confirmed): 12-month warranty, 7-day returns, 50+ point inspection, free shipping across Malaysia, payment via FPX / Touch 'n Go eWallet / GrabPay / DuitNow / instalments. -->
+<section class="trust" aria-label="Our promises">
+  <div class="wrap trust__grid">
+    <div class="trust__item"><span class="ic"><svg><use href="#i-shield"/></svg></span><div><strong>12-month warranty</strong><span>On every certified device</span></div></div>
+    <div class="trust__item"><span class="ic"><svg><use href="#i-return"/></svg></span><div><strong>7-day returns</strong><span>Changed your mind? No drama.</span></div></div>
+    <div class="trust__item"><span class="ic"><svg><use href="#i-clip"/></svg></span><div><strong>50+ point inspection</strong><span>Tested by hand in KL</span></div></div>
+    <div class="trust__item"><span class="ic"><svg><use href="#i-truck"/></svg></span><div><strong>Free shipping</strong><span>Across all of Malaysia</span></div></div>
+  </div>
+  <div class="trust__pay"><div class="wrap"><span class="lbl"><svg><use href="#i-wallet"/></svg>Pay your way</span><div class="pay"><em>FPX online banking</em><em>Touch 'n Go eWallet</em><em>GrabPay</em><em>DuitNow QR</em><em>Visa / Mastercard</em><em>0% instalments</em></div></div></div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="section" id="shop">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">Shop by category</div><h2>Only what we can<br>properly prove.</h2></div>
+      <p class="lede">We only certify categories we can fully test, grade, warranty and support in-house. If we can't stand behind it, we don't sell it.</p>
+    </div>
+    <div class="cats reveal">
+      <a href="#products" class="cat cat--hero" data-filter="ereader">
+        <div><span class="since">Where we started</span><h3>E-readers</h3><p>Kindle, Kobo and friends. Screen, frontlight and battery checked page by page.</p><div class="count">Kindle · Kobo · PocketBook</div></div>
+        <span class="go"><svg><use href="#i-arrow"/></svg></span>
+        <svg class="art" viewBox="0 0 200 200"><use href="#d-ereader"/></svg>
+      </a>
+      <a href="#products" class="cat" data-filter="phone"><div><h3>Phones</h3><div class="count">iPhone · Samsung · Pixel</div></div><span class="go"><svg><use href="#i-arrow"/></svg></span><svg class="art" viewBox="0 0 200 200"><use href="#d-phone"/></svg></a>
+      <a href="#products" class="cat" data-filter="phone"><div><h3>Tablets</h3><div class="count">iPad · Galaxy Tab</div></div><span class="go"><svg><use href="#i-arrow"/></svg></span><svg class="art" viewBox="0 0 200 200"><use href="#d-tablet"/></svg></a>
+      <a href="#products" class="cat" data-filter="laptop"><div><h3>Laptops</h3><div class="count">MacBook · XPS · ThinkPad</div></div><span class="go"><svg><use href="#i-arrow"/></svg></span><svg class="art" viewBox="0 0 200 200"><use href="#d-laptop"/></svg></a>
+      <a href="#products" class="cat" data-filter="camera"><div><h3>Cameras &amp; drones</h3><div class="count">DJI · Sony · Fujifilm</div></div><span class="go"><svg><use href="#i-arrow"/></svg></span><svg class="art" viewBox="0 0 200 200"><use href="#d-drone"/></svg></a>
+      <a href="#products" class="cat" data-filter="audio"><div><h3>Audio</h3><div class="count">Sony · Bose · AirPods</div></div><span class="go"><svg><use href="#i-arrow"/></svg></span><svg class="art" viewBox="0 0 200 200"><use href="#d-headphones"/></svg></a>
+      <a href="#products" class="cat" data-filter="audio"><div><h3>Gaming</h3><div class="count">Switch · PlayStation · Steam Deck</div></div><span class="go"><svg><use href="#i-arrow"/></svg></span><svg class="art" viewBox="0 0 200 200"><use href="#d-switch"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section section--ink how" id="certified">
+  <img class="how__script" src="assets/logo-white.png" alt="">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">Harrington Certified</div><h2>Four steps between<br>"used" and "proven".</h2></div>
+      <p class="lede">Nothing gets the Harrington name until it has been through all four. Every result is written into the device's own report, so you see exactly what we saw.</p>
+    </div>
+    <div class="how__steps reveal">
+      <div class="step"><div class="step__n">STEP 01</div><div class="step__ic"><svg><use href="#i-bolt"/></svg></div><h3>Tested</h3><p>50+ hands-on checks by our technicians, from battery and display to every port, button and sensor.</p><ul><li>Battery capacity &amp; cycles</li><li>Display &amp; touch grid</li><li>Ports, radios, cameras</li></ul></div>
+      <div class="step"><div class="step__n">STEP 02</div><div class="step__ic"><svg><use href="#i-medal"/></svg></div><h3>Graded</h3><p>Two separate, honest grades: how it works (A / B / C) and how it looks (Pristine / Clean / Lived-in).</p><ul><li>Functional grade</li><li>Cosmetic grade</li><li>Harrington Score /100</li></ul></div>
+      <div class="step"><div class="step__n">STEP 03</div><div class="step__ic"><svg><use href="#i-doc"/></svg></div><h3>Reported</h3><p>A full inspection report tied to a unique Score ID. Look it up before you buy, keep it after.</p><ul><li>Unique Score ID</li><li>Every check, every result</li><li>Wiped &amp; unlocked</li></ul></div>
+      <div class="step"><div class="step__n">STEP 04</div><div class="step__ic"><svg><use href="#i-shield"/></svg></div><h3>Warrantied</h3><p>12 months of cover and 7 days to change your mind. Real people in KL if anything's not right.</p><ul><li>12-month warranty</li><li>7-day returns</li><li>Local repair support</li></ul></div>
+    </div>
+    <div class="how__note reveal"><span class="mono">HC-2610-04821</span> Every certified device ships with its Score ID on the box, the invoice and the report.</div>
+  </div>
+</section>
+
+<!-- ============ GRADING ============ -->
+<section class="section" id="grades">
+  <div class="wrap">
+    <div class="section-head section-head--center reveal">
+      <div class="eyebrow">Two grades. Zero guesswork.</div>
+      <h2>How it works and how it looks<br>are two different questions.</h2>
+      <p class="lede">Most sellers squash everything into one vague label. We grade function and cosmetics separately, so a perfectly working device with a few scuffs is never confused with one that has a tired battery.</p>
+    </div>
+
+    <div class="grading reveal">
+      <div class="gcard" data-tabs>
+        <div class="gcard__head">
+          <div><div class="gcard__label">System 01 · Functional Grade</div><h3>How it works</h3><p class="gcard__q">Based on hands-on testing, battery performance where relevant, component condition and any limitations.</p></div>
+          <span class="gcard__icon" style="color:var(--grade-a)"><svg><use href="#i-gauge"/></svg></span>
+        </div>
+        <div class="tabs" role="tablist">
+          <button class="tab" role="tab" aria-selected="true" data-panel="fa"><span class="gchip gchip--a">A</span>Grade A</button>
+          <button class="tab" role="tab" aria-selected="false" data-panel="fb"><span class="gchip gchip--b">B</span>Grade B</button>
+          <button class="tab" role="tab" aria-selected="false" data-panel="fc"><span class="gchip gchip--c">C</span>Grade C</button>
+        </div>
+        <div class="panel active" id="fa">
+          <div>
+            <h4 class="tone-a">Performs like new.</h4>
+            <p>Passes every check with nothing to declare. The one to pick for new-device peace of mind.</p>
+            <ul class="spec">
+              <li><svg class="tone-a"><use href="#i-check"/></svg><div><span class="k">TESTING</span><span class="v">100% of checks passed, no notes</span></div></li>
+              <li><svg class="tone-a"><use href="#i-check"/></svg><div><span class="k">BATTERY</span><span class="v">85%+ of original capacity</span></div></li>
+              <li><svg class="tone-a"><use href="#i-check"/></svg><div><span class="k">COMPONENTS</span><span class="v">Original or Harrington-certified parts</span></div></li>
+              <li><svg class="tone-a"><use href="#i-check"/></svg><div><span class="k">LIMITATIONS</span><span class="v">None</span></div></li>
+            </ul>
+          </div>
+          <div class="meter"><div><label>Battery</label><strong class="tone-a">85%+</strong><div class="bar"><i class="a" style="width:92%"></i></div></div><div><label>Checks</label><strong>All</strong><div class="bar"><i class="a" style="width:100%"></i></div></div><div><label>Limitations</label><strong>None</strong></div></div>
+        </div>
+        <div class="panel" id="fb">
+          <div>
+            <h4 class="tone-b">Fully working, small trade-offs.</h4>
+            <p>Everything that matters works properly. Any minor, non-critical note is written plainly in the report.</p>
+            <ul class="spec">
+              <li><svg class="tone-b"><use href="#i-check"/></svg><div><span class="k">TESTING</span><span class="v">All core functions pass; minor notes disclosed</span></div></li>
+              <li><svg class="tone-b"><use href="#i-check"/></svg><div><span class="k">BATTERY</span><span class="v">80%+ of original capacity</span></div></li>
+              <li><svg class="tone-b"><use href="#i-check"/></svg><div><span class="k">COMPONENTS</span><span class="v">Any replaced part is quality-checked and listed</span></div></li>
+              <li><svg class="tone-b"><use href="#i-check"/></svg><div><span class="k">LIMITATIONS</span><span class="v">Minor only, e.g. a slightly loose port</span></div></li>
+            </ul>
+          </div>
+          <div class="meter"><div><label>Battery</label><strong class="tone-b">80%+</strong><div class="bar"><i class="b" style="width:82%"></i></div></div><div><label>Core checks</label><strong>All</strong><div class="bar"><i class="b" style="width:100%"></i></div></div><div><label>Limitations</label><strong>Minor</strong></div></div>
+        </div>
+        <div class="panel" id="fc">
+          <div>
+            <h4 class="tone-c">Works well, honest limits.</h4>
+            <p>Dependable for everyday use, with clearly listed limitations and the biggest savings. No surprises after checkout.</p>
+            <ul class="spec">
+              <li><svg class="tone-c"><use href="#i-check"/></svg><div><span class="k">TESTING</span><span class="v">Core functions pass; limitations itemised</span></div></li>
+              <li><svg class="tone-c"><use href="#i-check"/></svg><div><span class="k">BATTERY</span><span class="v">75%+ of original capacity</span></div></li>
+              <li><svg class="tone-c"><use href="#i-check"/></svg><div><span class="k">COMPONENTS</span><span class="v">May include non-original parts, always declared</span></div></li>
+              <li><svg class="tone-c"><use href="#i-check"/></svg><div><span class="k">LIMITATIONS</span><span class="v">Listed upfront and priced in</span></div></li>
+            </ul>
+          </div>
+          <div class="meter"><div><label>Battery</label><strong class="tone-c">75%+</strong><div class="bar"><i class="c" style="width:76%"></i></div></div><div><label>Core checks</label><strong>All</strong><div class="bar"><i class="c" style="width:100%"></i></div></div><div><label>Limitations</label><strong>Listed</strong></div></div>
+        </div>
+        <div class="gnote"><svg><use href="#i-info"/></svg>Every grade gets the same 12-month warranty. Grade affects price, never protection.</div>
+      </div>
+
+      <div class="gcard" data-tabs>
+        <div class="gcard__head">
+          <div><div class="gcard__label">System 02 · Cosmetic Grade</div><h3>How it looks</h3><p class="gcard__q">A separate, clear rating for physical condition and signs of use, checked under bright light at arm's length.</p></div>
+          <span class="gcard__icon" style="color:var(--red)"><svg><use href="#i-eye"/></svg></span>
+        </div>
+        <div class="tabs" role="tablist">
+          <button class="tab" role="tab" aria-selected="true" data-panel="cp">Pristine</button>
+          <button class="tab" role="tab" aria-selected="false" data-panel="cc">Clean</button>
+          <button class="tab" role="tab" aria-selected="false" data-panel="cl">Lived-in</button>
+        </div>
+        <div class="panel active" id="cp">
+          <div>
+            <h4>Looks brand new.</h4>
+            <p>No visible signs of use at arm's length. Gift-worthy, straight out of the box.</p>
+            <ul class="spec">
+              <li><svg class="red"><use href="#i-check"/></svg><div><span class="k">SCREEN</span><span class="v">Flawless, no visible scratches</span></div></li>
+              <li><svg class="red"><use href="#i-check"/></svg><div><span class="k">BODY</span><span class="v">No visible marks or scuffs</span></div></li>
+              <li><svg class="red"><use href="#i-check"/></svg><div><span class="k">IN HAND</span><span class="v">Indistinguishable from new</span></div></li>
+            </ul>
+          </div>
+          <div class="cos-visual"><svg viewBox="0 0 120 220"><use href="#cos-phone"/><g fill="#fff"><path d="M84 92l2.4 6.6 6.6 2.4-6.6 2.4L84 110l-2.4-6.6-6.6-2.4 6.6-2.4z" opacity=".9"/><path d="M40 150l1.4 3.6 3.6 1.4-3.6 1.4L40 160l-1.4-3.6-3.6-1.4 3.6-1.4z" opacity=".6"/></g></svg><small>No visible marks</small></div>
+        </div>
+        <div class="panel" id="cc">
+          <div>
+            <h4>Light signs of love.</h4>
+            <p>Faint micro-scratches you'll only spot if you go looking. Invisible with the screen on.</p>
+            <ul class="spec">
+              <li><svg class="red"><use href="#i-check"/></svg><div><span class="k">SCREEN</span><span class="v">No scratches visible when on</span></div></li>
+              <li><svg class="red"><use href="#i-check"/></svg><div><span class="k">BODY</span><span class="v">Faint micro-scratches or tiny marks</span></div></li>
+              <li><svg class="red"><use href="#i-check"/></svg><div><span class="k">IN HAND</span><span class="v">Looks great; lovely in a case</span></div></li>
+            </ul>
+          </div>
+          <div class="cos-visual"><svg viewBox="0 0 120 220"><use href="#cos-phone"/><g stroke="#fff" stroke-linecap="round" fill="none" opacity=".5" stroke-width="1"><path d="M70 96l12-5"/><path d="M36 150l9 4"/><path d="M84 176l6-8"/></g></svg><small>Faint micro-marks</small></div>
+        </div>
+        <div class="panel" id="cl">
+          <div>
+            <h4>Character, at a great price.</h4>
+            <p>Visible scuffs or scratches from a well-used life. Nothing that affects how it works, and every mark is photographed in the report.</p>
+            <ul class="spec">
+              <li><svg class="red"><use href="#i-check"/></svg><div><span class="k">SCREEN</span><span class="v">Light marks possible, no effect on viewing</span></div></li>
+              <li><svg class="red"><use href="#i-check"/></svg><div><span class="k">BODY</span><span class="v">Visible scuffs, scratches or small dents</span></div></li>
+              <li><svg class="red"><use href="#i-check"/></svg><div><span class="k">IN HAND</span><span class="v">Biggest savings; every mark photographed</span></div></li>
+            </ul>
+          </div>
+          <div class="cos-visual"><svg viewBox="0 0 120 220"><use href="#cos-phone"/><g stroke="#fff" stroke-linecap="round" fill="none" stroke-width="1.3" opacity=".65"><path d="M62 92l26-10"/><path d="M66 100l14-5"/><path d="M28 140l18 8"/><path d="M30 150l10 3"/><path d="M78 170l10-14"/><path d="M50 190l20-4"/><path d="M14 40 a20 20 0 0 1 6 -14" stroke-width="2.5"/><path d="M106 196 a20 20 0 0 1 -8 10" stroke-width="2.5"/></g><circle cx="88" cy="128" r="2.2" fill="#fff" opacity=".35"/></svg><small>Visible wear, photographed</small></div>
+        </div>
+        <div class="gnote"><svg><use href="#i-info"/></svg>Cosmetic grade never affects function. A Lived-in Grade A works exactly like a Pristine Grade A.</div>
+      </div>
+    </div>
+
+    <div class="matrix reveal">
+      <div><h3>Mix and match to your budget.</h3><p>Two grades give you nine honest combinations. Pick the one that fits how you'll use it.</p></div>
+      <div class="matrix__eg">
+        <div class="combo"><div class="row"><span class="badge badge--a"><span class="dot"></span>FUNC A</span><span class="badge badge--cos">PRISTINE</span></div><b>The gift</b><span>Looks and works like new</span></div>
+        <div class="combo"><div class="row"><span class="badge badge--a"><span class="dot"></span>FUNC A</span><span class="badge badge--cos">LIVED-IN</span></div><b>The smart buy</b><span>Perfect inside, goes in a case anyway</span></div>
+        <div class="combo"><div class="row"><span class="badge badge--b"><span class="dot"></span>FUNC B</span><span class="badge badge--cos">CLEAN</span></div><b>The everyday</b><span>Great value for school or work</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCORE ID LOOKUP ============ -->
+<section class="section section--red lookup" id="lookup">
+  <div class="wrap lookup__grid">
+    <div class="reveal">
+      <img class="lookup__script" src="assets/logo-white.png" alt="Harrington">
+      <div class="eyebrow">Score ID lookup</div>
+      <h2>See exactly what you're buying.</h2>
+      <p class="lede">Every certified device has its own Score ID. Enter it to see the full inspection report: every check, every measurement, every mark.</p>
+      <form class="idform" id="idForm" autocomplete="off">
+        <label><svg><use href="#i-search"/></svg><input id="idInput" type="text" placeholder="HC-0000-00000" value="HC-2610-04821" maxlength="13" aria-label="Score ID" spellcheck="false"></label>
+        <button class="btn btn--ink" type="submit">Check report <svg><use href="#i-arrow"/></svg></button>
+      </form>
+      <div class="idhint">Try a sample: <button type="button" data-id="HC-2610-04821" class="on">HC-2610-04821</button><button type="button" data-id="HC-2609-11357">HC-2609-11357</button><button type="button" data-id="HC-2610-00762">HC-2610-00762</button></div>
+      <div class="idmsg" id="idMsg" aria-live="polite"></div>
+      <div class="lookup__where">
+        <svg class="qr" viewBox="0 0 21 21" aria-hidden="true"><g fill="#1A1A1A"><rect x="0" y="0" width="1.02" height="1.02"/><rect x="1" y="0" width="1.02" height="1.02"/><rect x="2" y="0" width="1.02" height="1.02"/><rect x="3" y="0" width="1.02" height="1.02"/><rect x="4" y="0" width="1.02" height="1.02"/><rect x="5" y="0" width="1.02" height="1.02"/><rect x="6" y="0" width="1.02" height="1.02"/><rect x="8" y="0" width="1.02" height="1.02"/><rect x="9" y="0" width="1.02" height="1.02"/><rect x="11" y="0" width="1.02" height="1.02"/><rect x="14" y="0" width="1.02" height="1.02"/><rect x="15" y="0" width="1.02" height="1.02"/><rect x="16" y="0" width="1.02" height="1.02"/><rect x="17" y="0" width="1.02" height="1.02"/><rect x="18" y="0" width="1.02" height="1.02"/><rect x="19" y="0" width="1.02" height="1.02"/><rect x="20" y="0" width="1.02" height="1.02"/><rect x="0" y="1" width="1.02" height="1.02"/><rect x="6" y="1" width="1.02" height="1.02"/><rect x="8" y="1" width="1.02" height="1.02"/><rect x="9" y="1" width="1.02" height="1.02"/><rect x="11" y="1" width="1.02" height="1.02"/><rect x="12" y="1" width="1.02" height="1.02"/><rect x="14" y="1" width="1.02" height="1.02"/><rect x="20" y="1" width="1.02" height="1.02"/><rect x="0" y="2" width="1.02" height="1.02"/><rect x="2" y="2" width="1.02" height="1.02"/><rect x="3" y="2" width="1.02" height="1.02"/><rect x="4" y="2" width="1.02" height="1.02"/><rect x="6" y="2" width="1.02" height="1.02"/><rect x="8" y="2" width="1.02" height="1.02"/><rect x="9" y="2" width="1.02" height="1.02"/><rect x="10" y="2" width="1.02" height="1.02"/><rect x="12" y="2" width="1.02" height="1.02"/><rect x="14" y="2" width="1.02" height="1.02"/><rect x="16" y="2" width="1.02" height="1.02"/><rect x="17" y="2" width="1.02" height="1.02"/><rect x="18" y="2" width="1.02" height="1.02"/><rect x="20" y="2" width="1.02" height="1.02"/><rect x="0" y="3" width="1.02" height="1.02"/><rect x="2" y="3" width="1.02" height="1.02"/><rect x="3" y="3" width="1.02" height="1.02"/><rect x="4" y="3" width="1.02" height="1.02"/><rect x="6" y="3" width="1.02" height="1.02"/><rect x="8" y="3" width="1.02" height="1.02"/><rect x="12" y="3" width="1.02" height="1.02"/><rect x="14" y="3" width="1.02" height="1.02"/><rect x="16" y="3" width="1.02" height="1.02"/><rect x="17" y="3" width="1.02" height="1.02"/><rect x="18" y="3" width="1.02" height="1.02"/><rect x="20" y="3" width="1.02" height="1.02"/><rect x="0" y="4" width="1.02" height="1.02"/><rect x="2" y="4" width="1.02" height="1.02"/><rect x="3" y="4" width="1.02" height="1.02"/><rect x="4" y="4" width="1.02" height="1.02"/><rect x="6" y="4" width="1.02" height="1.02"/><rect x="9" y="4" width="1.02" height="1.02"/><rect x="11" y="4" width="1.02" height="1.02"/><rect x="12" y="4" width="1.02" height="1.02"/><rect x="14" y="4" width="1.02" height="1.02"/><rect x="16" y="4" width="1.02" height="1.02"/><rect x="17" y="4" width="1.02" height="1.02"/><rect x="18" y="4" width="1.02" height="1.02"/><rect x="20" y="4" width="1.02" height="1.02"/><rect x="0" y="5" width="1.02" height="1.02"/><rect x="6" y="5" width="1.02" height="1.02"/><rect x="8" y="5" width="1.02" height="1.02"/><rect x="9" y="5" width="1.02" height="1.02"/><rect x="11" y="5" width="1.02" height="1.02"/><rect x="14" y="5" width="1.02" height="1.02"/><rect x="20" y="5" width="1.02" height="1.02"/><rect x="0" y="6" width="1.02" height="1.02"/><rect x="1" y="6" width="1.02" height="1.02"/><rect x="2" y="6" width="1.02" height="1.02"/><rect x="3" y="6" width="1.02" height="1.02"/><rect x="4" y="6" width="1.02" height="1.02"/><rect x="5" y="6" width="1.02" height="1.02"/><rect x="6" y="6" width="1.02" height="1.02"/><rect x="9" y="6" width="1.02" height="1.02"/><rect x="11" y="6" width="1.02" height="1.02"/><rect x="12" y="6" width="1.02" height="1.02"/><rect x="14" y="6" width="1.02" height="1.02"/><rect x="15" y="6" width="1.02" height="1.02"/><rect x="16" y="6" width="1.02" height="1.02"/><rect x="17" y="6" width="1.02" height="1.02"/><rect x="18" y="6" width="1.02" height="1.02"/><rect x="19" y="6" width="1.02" height="1.02"/><rect x="20" y="6" width="1.02" height="1.02"/><rect x="8" y="7" width="1.02" height="1.02"/><rect x="10" y="7" width="1.02" height="1.02"/><rect x="11" y="7" width="1.02" height="1.02"/><rect x="0" y="8" width="1.02" height="1.02"/><rect x="1" y="8" width="1.02" height="1.02"/><rect x="4" y="8" width="1.02" height="1.02"/><rect x="9" y="8" width="1.02" height="1.02"/><rect x="11" y="8" width="1.02" height="1.02"/><rect x="12" y="8" width="1.02" height="1.02"/><rect x="14" y="8" width="1.02" height="1.02"/><rect x="16" y="8" width="1.02" height="1.02"/><rect x="0" y="9" width="1.02" height="1.02"/><rect x="4" y="9" width="1.02" height="1.02"/><rect x="7" y="9" width="1.02" height="1.02"/><rect x="9" y="9" width="1.02" height="1.02"/><rect x="14" y="9" width="1.02" height="1.02"/><rect x="15" y="9" width="1.02" height="1.02"/><rect x="17" y="9" width="1.02" height="1.02"/><rect x="18" y="9" width="1.02" height="1.02"/><rect x="19" y="9" width="1.02" height="1.02"/><rect x="20" y="9" width="1.02" height="1.02"/><rect x="0" y="10" width="1.02" height="1.02"/><rect x="2" y="10" width="1.02" height="1.02"/><rect x="3" y="10" width="1.02" height="1.02"/><rect x="4" y="10" width="1.02" height="1.02"/><rect x="6" y="10" width="1.02" height="1.02"/><rect x="7" y="10" width="1.02" height="1.02"/><rect x="12" y="10" width="1.02" height="1.02"/><rect x="13" y="10" width="1.02" height="1.02"/><rect x="14" y="10" width="1.02" height="1.02"/><rect x="17" y="10" width="1.02" height="1.02"/><rect x="18" y="10" width="1.02" height="1.02"/><rect x="19" y="10" width="1.02" height="1.02"/><rect x="20" y="10" width="1.02" height="1.02"/><rect x="2" y="11" width="1.02" height="1.02"/><rect x="3" y="11" width="1.02" height="1.02"/><rect x="4" y="11" width="1.02" height="1.02"/><rect x="5" y="11" width="1.02" height="1.02"/><rect x="12" y="11" width="1.02" height="1.02"/><rect x="17" y="11" width="1.02" height="1.02"/><rect x="18" y="11" width="1.02" height="1.02"/><rect x="19" y="11" width="1.02" height="1.02"/><rect x="0" y="12" width="1.02" height="1.02"/><rect x="1" y="12" width="1.02" height="1.02"/><rect x="2" y="12" width="1.02" height="1.02"/><rect x="3" y="12" width="1.02" height="1.02"/><rect x="4" y="12" width="1.02" height="1.02"/><rect x="5" y="12" width="1.02" height="1.02"/><rect x="6" y="12" width="1.02" height="1.02"/><rect x="7" y="12" width="1.02" height="1.02"/><rect x="8" y="12" width="1.02" height="1.02"/><rect x="9" y="12" width="1.02" height="1.02"/><rect x="10" y="12" width="1.02" height="1.02"/><rect x="13" y="12" width="1.02" height="1.02"/><rect x="14" y="12" width="1.02" height="1.02"/><rect x="15" y="12" width="1.02" height="1.02"/><rect x="16" y="12" width="1.02" height="1.02"/><rect x="17" y="12" width="1.02" height="1.02"/><rect x="20" y="12" width="1.02" height="1.02"/><rect x="9" y="13" width="1.02" height="1.02"/><rect x="10" y="13" width="1.02" height="1.02"/><rect x="11" y="13" width="1.02" height="1.02"/><rect x="12" y="13" width="1.02" height="1.02"/><rect x="14" y="13" width="1.02" height="1.02"/><rect x="15" y="13" width="1.02" height="1.02"/><rect x="18" y="13" width="1.02" height="1.02"/><rect x="20" y="13" width="1.02" height="1.02"/><rect x="0" y="14" width="1.02" height="1.02"/><rect x="1" y="14" width="1.02" height="1.02"/><rect x="2" y="14" width="1.02" height="1.02"/><rect x="3" y="14" width="1.02" height="1.02"/><rect x="4" y="14" width="1.02" height="1.02"/><rect x="5" y="14" width="1.02" height="1.02"/><rect x="6" y="14" width="1.02" height="1.02"/><rect x="12" y="14" width="1.02" height="1.02"/><rect x="13" y="14" width="1.02" height="1.02"/><rect x="14" y="14" width="1.02" height="1.02"/><rect x="18" y="14" width="1.02" height="1.02"/><rect x="19" y="14" width="1.02" height="1.02"/><rect x="0" y="15" width="1.02" height="1.02"/><rect x="6" y="15" width="1.02" height="1.02"/><rect x="13" y="15" width="1.02" height="1.02"/><rect x="15" y="15" width="1.02" height="1.02"/><rect x="16" y="15" width="1.02" height="1.02"/><rect x="17" y="15" width="1.02" height="1.02"/><rect x="18" y="15" width="1.02" height="1.02"/><rect x="19" y="15" width="1.02" height="1.02"/><rect x="0" y="16" width="1.02" height="1.02"/><rect x="2" y="16" width="1.02" height="1.02"/><rect x="3" y="16" width="1.02" height="1.02"/><rect x="4" y="16" width="1.02" height="1.02"/><rect x="6" y="16" width="1.02" height="1.02"/><rect x="9" y="16" width="1.02" height="1.02"/><rect x="13" y="16" width="1.02" height="1.02"/><rect x="14" y="16" width="1.02" height="1.02"/><rect x="15" y="16" width="1.02" height="1.02"/><rect x="16" y="16" width="1.02" height="1.02"/><rect x="17" y="16" width="1.02" height="1.02"/><rect x="0" y="17" width="1.02" height="1.02"/><rect x="2" y="17" width="1.02" height="1.02"/><rect x="3" y="17" width="1.02" height="1.02"/><rect x="4" y="17" width="1.02" height="1.02"/><rect x="6" y="17" width="1.02" height="1.02"/><rect x="8" y="17" width="1.02" height="1.02"/><rect x="11" y="17" width="1.02" height="1.02"/><rect x="16" y="17" width="1.02" height="1.02"/><rect x="17" y="17" width="1.02" height="1.02"/><rect x="19" y="17" width="1.02" height="1.02"/><rect x="0" y="18" width="1.02" height="1.02"/><rect x="2" y="18" width="1.02" height="1.02"/><rect x="3" y="18" width="1.02" height="1.02"/><rect x="4" y="18" width="1.02" height="1.02"/><rect x="6" y="18" width="1.02" height="1.02"/><rect x="9" y="18" width="1.02" height="1.02"/><rect x="10" y="18" width="1.02" height="1.02"/><rect x="13" y="18" width="1.02" height="1.02"/><rect x="14" y="18" width="1.02" height="1.02"/><rect x="15" y="18" width="1.02" height="1.02"/><rect x="18" y="18" width="1.02" height="1.02"/><rect x="0" y="19" width="1.02" height="1.02"/><rect x="6" y="19" width="1.02" height="1.02"/><rect x="9" y="19" width="1.02" height="1.02"/><rect x="11" y="19" width="1.02" height="1.02"/><rect x="12" y="19" width="1.02" height="1.02"/><rect x="17" y="19" width="1.02" height="1.02"/><rect x="20" y="19" width="1.02" height="1.02"/><rect x="0" y="20" width="1.02" height="1.02"/><rect x="1" y="20" width="1.02" height="1.02"/><rect x="2" y="20" width="1.02" height="1.02"/><rect x="3" y="20" width="1.02" height="1.02"/><rect x="4" y="20" width="1.02" height="1.02"/><rect x="5" y="20" width="1.02" height="1.02"/><rect x="6" y="20" width="1.02" height="1.02"/><rect x="8" y="20" width="1.02" height="1.02"/><rect x="9" y="20" width="1.02" height="1.02"/><rect x="10" y="20" width="1.02" height="1.02"/><rect x="12" y="20" width="1.02" height="1.02"/><rect x="13" y="20" width="1.02" height="1.02"/><rect x="14" y="20" width="1.02" height="1.02"/><rect x="16" y="20" width="1.02" height="1.02"/><rect x="17" y="20" width="1.02" height="1.02"/><rect x="20" y="20" width="1.02" height="1.02"/></g></svg>
+        <span>Find it on the box, on your invoice, or scan the QR on the device sleeve. <i>Semak sendiri, yakin sendiri.</i></span>
+      </div>
+    </div>
+    <div class="report reveal" id="report" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="section" id="products">
+  <div class="wrap">
+    <div class="section-head section-head--stack reveal">
+      <div><div class="eyebrow">Fresh from the lab</div><h2>This week's certified picks.</h2></div>
+      <div class="filters" aria-label="Filter products">
+        <button class="chip on" data-f="all">All</button>
+        <button class="chip" data-f="ereader">E-readers</button>
+        <button class="chip" data-f="phone">Phones &amp; tablets</button>
+        <button class="chip" data-f="laptop">Laptops</button>
+        <button class="chip" data-f="camera">Cameras &amp; drones</button>
+        <button class="chip" data-f="audio">Audio &amp; gaming</button>
+      </div>
+    </div>
+    <div class="products reveal" id="productGrid">
+      <article class="card" data-cat="ereader">
+        <div class="card__art"><button class="card__fav" aria-label="Save"><svg><use href="#i-heart"/></svg></button><span class="card__score"><i>HS</i>94</span><svg viewBox="0 0 200 200"><use href="#d-ereader"/></svg></div>
+        <div class="card__body"><div class="card__badges"><span class="badge badge--a"><span class="dot"></span>FUNC A</span><span class="badge badge--cos">PRISTINE</span></div><h3>Kindle Paperwhite</h3><div class="card__spec">11th Gen · 16GB · Black</div><div class="card__id">HC-2610-04821</div><div class="card__price"><strong>RM 429</strong><s>RM 699</s><span class="save">-39%</span></div></div>
+      </article>
+      <article class="card" data-cat="phone">
+        <div class="card__art"><button class="card__fav" aria-label="Save"><svg><use href="#i-heart"/></svg></button><span class="card__score"><i>HS</i>90</span><svg viewBox="0 0 200 200"><use href="#d-tablet"/></svg></div>
+        <div class="card__body"><div class="card__badges"><span class="badge badge--a"><span class="dot"></span>FUNC A</span><span class="badge badge--cos">CLEAN</span></div><h3>iPad Air (5th Gen)</h3><div class="card__spec">M1 · 64GB · Wi-Fi · Blue</div><div class="card__id">HC-2610-03390</div><div class="card__price"><strong>RM 1,899</strong><s>RM 2,799</s><span class="save">-32%</span></div></div>
+      </article>
+      <article class="card" data-cat="phone">
+        <div class="card__art"><button class="card__fav" aria-label="Save"><svg><use href="#i-heart"/></svg></button><span class="card__score"><i>HS</i>88</span><svg viewBox="0 0 200 200"><use href="#d-phone"/></svg></div>
+        <div class="card__body"><div class="card__badges"><span class="badge badge--a"><span class="dot"></span>FUNC A</span><span class="badge badge--cos">CLEAN</span></div><h3>iPhone 14</h3><div class="card__spec">128GB · Starlight · Battery 89%</div><div class="card__id">HC-2609-11357</div><div class="card__price"><strong>RM 2,349</strong><s>RM 3,399</s><span class="save">-31%</span></div></div>
+      </article>
+      <article class="card" data-cat="laptop">
+        <div class="card__art"><button class="card__fav" aria-label="Save"><svg><use href="#i-heart"/></svg></button><span class="card__score"><i>HS</i>81</span><svg viewBox="0 0 200 200"><use href="#d-laptop"/></svg></div>
+        <div class="card__body"><div class="card__badges"><span class="badge badge--b"><span class="dot"></span>FUNC B</span><span class="badge badge--cos">CLEAN</span></div><h3>MacBook Air M2</h3><div class="card__spec">13.6" · 8GB / 256GB · Midnight</div><div class="card__id">HC-2610-00762</div><div class="card__price"><strong>RM 3,149</strong><s>RM 4,499</s><span class="save">-30%</span></div></div>
+      </article>
+      <article class="card" data-cat="camera">
+        <div class="card__art"><button class="card__fav" aria-label="Save"><svg><use href="#i-heart"/></svg></button><span class="card__score"><i>HS</i>92</span><svg viewBox="0 0 200 200"><use href="#d-drone"/></svg></div>
+        <div class="card__body"><div class="card__badges"><span class="badge badge--a"><span class="dot"></span>FUNC A</span><span class="badge badge--cos">PRISTINE</span></div><h3>DJI Mini 3</h3><div class="card__spec">With DJI RC · Fly More kit</div><div class="card__id">HC-2610-02215</div><div class="card__price"><strong>RM 1,899</strong><s>RM 2,599</s><span class="save">-27%</span></div></div>
+      </article>
+      <article class="card" data-cat="audio">
+        <div class="card__art"><button class="card__fav" aria-label="Save"><svg><use href="#i-heart"/></svg></button><span class="card__score"><i>HS</i>85</span><svg viewBox="0 0 200 200"><use href="#d-headphones"/></svg></div>
+        <div class="card__body"><div class="card__badges"><span class="badge badge--a"><span class="dot"></span>FUNC A</span><span class="badge badge--cos">LIVED-IN</span></div><h3>Sony WH-1000XM5</h3><div class="card__spec">Noise cancelling · Platinum Silver</div><div class="card__id">HC-2609-09481</div><div class="card__price"><strong>RM 849</strong><s>RM 1,699</s><span class="save">-50%</span></div></div>
+      </article>
+      <article class="card" data-cat="audio">
+        <div class="card__art"><button class="card__fav" aria-label="Save"><svg><use href="#i-heart"/></svg></button><span class="card__score"><i>HS</i>83</span><svg viewBox="0 0 200 200"><use href="#d-switch"/></svg></div>
+        <div class="card__body"><div class="card__badges"><span class="badge badge--b"><span class="dot"></span>FUNC B</span><span class="badge badge--cos">CLEAN</span></div><h3>Nintendo Switch OLED</h3><div class="card__spec">64GB · White · Dock included</div><div class="card__id">HC-2610-01128</div><div class="card__price"><strong>RM 1,059</strong><s>RM 1,499</s><span class="save">-29%</span></div></div>
+      </article>
+      <article class="card" data-cat="ereader">
+        <div class="card__art"><button class="card__fav" aria-label="Save"><svg><use href="#i-heart"/></svg></button><span class="card__score"><i>HS</i>91</span><svg viewBox="0 0 200 200"><use href="#d-kobo"/></svg></div>
+        <div class="card__body"><div class="card__badges"><span class="badge badge--a"><span class="dot"></span>FUNC A</span><span class="badge badge--cos">CLEAN</span></div><h3>Kobo Clara 2E</h3><div class="card__spec">6" · 16GB · Deep Ocean Blue</div><div class="card__id">HC-2610-04102</div><div class="card__price"><strong>RM 469</strong><s>RM 699</s><span class="save">-33%</span></div></div>
+      </article>
+    </div>
+    <div class="products__foot">
+      <p>Example prices for concept purposes only. "Was" prices indicate typical new retail.</p>
+      <a href="#shop" class="btn btn--ink">Browse all certified tech <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRADE-IN ============ -->
+<!-- PROPOSED: free courier pickup, KL drop-off hub, DuitNow payout within 24h of inspection, +10% credit bonus, 7-day quote lock. -->
+<section class="section section--white" id="trade">
+  <div class="wrap trade__grid">
+    <div class="reveal">
+      <div class="eyebrow">Sell · Trade in · Upgrade</div>
+      <h2>Your old tech is worth more than your drawer thinks.</h2>
+      <p class="lede" style="margin-top:20px">Get a fair offer in under a minute, send it to us for free, and get paid fast. Or put it towards something certified and better.</p>
+      <ol class="tsteps">
+        <li><span class="n">1</span><div><h3>Get an instant quote</h3><p>Tell us what it is and how it's doing. No sign-up needed.</p><span class="tag">Quote locked for 7 days</span></div></li>
+        <li><span class="n">2</span><div><h3>Ship free or drop it off</h3><p>Free courier pickup anywhere in Malaysia, or walk into our KL hub. Your data is wiped, certified.</p></div></li>
+        <li><span class="n">3</span><div><h3>Get paid or upgrade</h3><p>Cash via DuitNow within 24 hours of inspection, or take 10% extra as Harrington credit.</p></div></li>
+      </ol>
+    </div>
+    <div class="quote reveal">
+      <div class="quote__inner">
+        <div class="quote__top"><h3>Trade-in quote</h3><span class="mono">Takes ~60 sec</span></div>
+        <div class="field">
+          <label for="qCat">What are you trading in?</label>
+          <div class="selects">
+            <div class="select"><select id="qCat" aria-label="Category"></select></div>
+            <div class="select"><select id="qModel" aria-label="Model"></select></div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="lbl">Condition <span>· be honest, we'll check</span></div>
+          <div class="seg" id="qCond">
+            <button type="button" data-m="1">Like new<small>No marks</small></button>
+            <button type="button" data-m=".86" class="on">Good<small>Light wear</small></button>
+            <button type="button" data-m=".68">Fair<small>Visible wear</small></button>
+            <button type="button" data-m=".35">Faulty<small>Has issues</small></button>
+          </div>
+        </div>
+        <div class="field">
+          <div class="lbl">How do you want to be paid?</div>
+          <div class="payout" id="qPay">
+            <button type="button" data-b="0"><b>Cash via DuitNow</b><small>Within 24h of inspection</small></button>
+            <button type="button" data-b=".1" class="on"><b>Harrington credit</b><small>+10% bonus to upgrade</small></button>
+          </div>
+        </div>
+        <div class="offer">
+          <div><small>Your estimated offer</small><strong id="qOffer">RM 0</strong><div class="bm" id="qNote">Sebut harga dijamin 7 hari</div></div>
+          <a href="#trade" class="btn btn--red">Jom trade in <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY PRE-OWNED ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">Why pre-owned</div><h2>Good for your wallet.<br>Kinder to the planet.</h2></div>
+      <p class="lede">The greenest gadget is the one that already exists. Giving good tech a second owner keeps it in use and out of landfill, and keeps more ringgit in your pocket.</p>
+    </div>
+    <div class="why reveal">
+      <div class="why__big">
+        <svg class="leaf" viewBox="0 0 24 24"><use href="#i-leaf"/></svg>
+        <div><div class="eyebrow" style="color:#fff">Second life, first class</div><h3>Same tech.<br>Smaller footprint.<br>Bigger savings.</h3><p>Every Harrington device is one less new device that had to be made, shipped and eventually thrown away.</p></div>
+        <a href="#products" class="btn btn--white" style="width:max-content">Shop certified <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="why__card"><span class="ic"><svg><use href="#i-tag"/></svg></span><div class="stat">Up to 40%<sup>*</sup></div><h3>Less than buying new</h3><p>Certified, warrantied and properly tested, for a lot less than the shop-floor price.</p></div>
+      <div class="why__card"><span class="ic"><svg><use href="#i-leaf"/></svg></span><div class="stat">Less e&#8209;waste</div><h3>Kept in use, not in landfill</h3><p>Repairing and re-homing devices extends their life and reduces demand for new manufacturing.</p></div>
+      <div class="why__card"><span class="ic"><svg><use href="#i-cycle"/></svg></span><div class="stat">Full circle</div><h3>Trade in, trade up</h3><p>Sell us your old device when you upgrade, and we'll certify it for its next owner.</p></div>
+      <div class="why__card"><span class="ic"><svg><use href="#i-shield"/></svg></span><div class="stat">Zero gamble</div><h3>Not a marketplace</h3><p>You buy from Harrington, not a stranger. We test it, grade it and stand behind it.</p></div>
+    </div>
+    <p class="footnote">*Placeholder figure for this concept. Final savings claims to be based on Harrington's own pricing data.</p>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section section--white">
+  <div class="wrap">
+    <div class="section-head section-head--center reveal">
+      <div class="eyebrow">Happy second owners</div>
+      <h2>"Honestly felt like buying new."</h2>
+      <span class="example-tag">EXAMPLE TESTIMONIALS · CONCEPT ONLY</span>
+    </div>
+    <div class="quotes reveal">
+      <figure class="tcard" style="margin:0"><span class="bought">Kindle Paperwhite</span><div class="stars">★★★★★</div><blockquote>I checked the Score ID before paying and the report matched exactly. Battery 96%, not a single scratch. Sangat puas hati.</blockquote><footer><span class="av" style="background:var(--red)">AR</span><div><b>Aisyah R.</b><span>Shah Alam, Selangor</span></div></footer></figure>
+      <figure class="tcard" style="margin:0"><span class="bought">MacBook Air M2</span><div class="stars">★★★★★</div><blockquote>Grade B with one slightly loose port, written right there in the report. Saved over a thousand ringgit and knew exactly what I was getting.</blockquote><footer><span class="av" style="background:var(--grade-a)">DT</span><div><b>Daniel T.</b><span>George Town, Penang</span></div></footer></figure>
+      <figure class="tcard" style="margin:0"><span class="bought">Trade-in · iPhone 12</span><div class="stars">★★★★★</div><blockquote>Traded in my old phone, took the credit bonus and upgraded the same week. The courier came to my door in JB. Senang je.</blockquote><footer><span class="av" style="background:var(--ink)">PK</span><div><b>Priya K.</b><span>Johor Bahru, Johor</span></div></footer></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap faq__grid">
+    <div class="faq__aside reveal">
+      <div class="eyebrow">Support</div>
+      <h2>Questions? Tanya je.</h2>
+      <p class="lede" style="margin-top:20px">Straight answers about grades, warranty and trade-ins. Still stuck? Real humans in KL are happy to help.</p>
+      <div class="help"><span class="ic"><svg><use href="#i-chat"/></svg></span><div><b>Chat with us on WhatsApp</b><span>Mon–Sat, 10am–7pm · EN / BM / 中文</span></div></div>
+    </div>
+    <div class="acc reveal" id="faqList">
+      <div class="acc__item open"><button class="acc__q" aria-expanded="true">What does "Harrington Certified" actually mean?<span class="pm"></span></button><div class="acc__a"><div>It means a device has passed our 50+ point inspection, been given a Functional Grade and a Cosmetic Grade, had its data securely wiped and account locks removed, and is covered by our 12-month warranty. All of it is recorded in an inspection report linked to its unique Score ID.</div></div></div>
+      <div class="acc__item"><button class="acc__q" aria-expanded="false">Why two grades instead of one?<span class="pm"></span></button><div class="acc__a"><div>Because "how it works" and "how it looks" are different things. Functional Grade (A / B / C) covers performance, battery and any limitations. Cosmetic Grade (Pristine / Clean / Lived-in) covers physical wear. A Lived-in Grade A is a perfectly working device with a few scuffs, and often the best value on the site.</div></div></div>
+      <div class="acc__item"><button class="acc__q" aria-expanded="false">What is a Score ID and a Harrington Score?<span class="pm"></span></button><div class="acc__a"><div>Every certified device gets a unique Score ID, like <span class="mono">HC-2610-04821</span>. Enter it in the Score ID lookup to see that device's full inspection report. The Harrington Score (out of 100) rolls every test result and both grades into one easy number.</div></div></div>
+      <div class="acc__item"><button class="acc__q" aria-expanded="false">What does the 12-month warranty cover?<span class="pm"></span></button><div class="acc__a"><div>Any functional fault that wasn't declared in the inspection report, for 12 months from delivery. We'll repair, replace or refund. Accidental and liquid damage aren't covered, but we're happy to quote for repairs.</div></div></div>
+      <div class="acc__item"><button class="acc__q" aria-expanded="false">Can I return it if I change my mind?<span class="pm"></span></button><div class="acc__a"><div>Yes. You have 7 days from delivery to return any device for a full refund, as long as it comes back in the condition it arrived. Return shipping within Malaysia is on us.</div></div></div>
+      <div class="acc__item"><button class="acc__q" aria-expanded="false">How do trade-in payments work?<span class="pm"></span></button><div class="acc__a"><div>Once your device arrives and our technicians confirm its condition, we pay by DuitNow within 24 hours, or add the value plus a 10% bonus to your Harrington credit. If the condition differs from your quote, we'll send a revised offer. Accept it, or get your device back free.</div></div></div>
+      <div class="acc__item"><button class="acc__q" aria-expanded="false">Do you deliver to Sabah and Sarawak?<span class="pm"></span></button><div class="acc__a"><div>Yes. Shipping is free everywhere in Malaysia, including East Malaysia. Most Klang Valley orders arrive in 1–2 working days.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="news">
+  <div class="wrap">
+    <div class="news__box reveal">
+      <div><img class="news__script" src="assets/logo-white.png" alt="Harrington"><h2>Fresh stock drops every week. Be first in line.</h2></div>
+      <div class="news__form">
+        <form id="newsForm"><input type="email" required placeholder="you@email.com" aria-label="Email address"><button class="btn btn--ink" type="submit">Get first dibs</button></form>
+        <p id="newsMsg">New certified drops, trade-in bonuses and the odd good read. <i>Takde spam. Janji.</i></p>
+        <div class="perks"><span><svg><use href="#i-check"/></svg>Early access to Grade A drops</span><span><svg><use href="#i-check"/></svg>Members-only trade-in bonuses</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__about">
+        <a href="#top" class="logo-tile"><img src="assets/logo-tile.png" alt="Harrington" width="832" height="321"></a>
+        <p>Harrington Recommerce. A trusted place for certified pre-owned tech. Pre-loved tech, properly proven.</p>
+        <div class="footer__addr">
+          <span><svg><use href="#i-pin"/></svg>Kuala Lumpur, Malaysia</span>
+          <span><svg><use href="#i-mail"/></svg>hello@harrington.my (placeholder)</span>
+          <span><svg><use href="#i-call"/></svg>+60 3-0000 0000 (placeholder)</span>
+        </div>
+      </div>
+      <div><h4>Shop</h4><ul><li><a href="#shop">E-readers</a></li><li><a href="#shop">Phones &amp; tablets</a></li><li><a href="#shop">Laptops</a></li><li><a href="#shop">Cameras &amp; drones</a></li><li><a href="#shop">Audio &amp; gaming</a></li></ul></div>
+      <div><h4>Sell</h4><ul><li><a href="#trade">Trade-in quote</a></li><li><a href="#trade">Upgrade with credit</a></li><li><a href="#trade">Courier pickup</a></li><li><a href="#trade">Business &amp; bulk</a></li></ul></div>
+      <div><h4>Certified</h4><ul><li><a href="#certified">How it works</a></li><li><a href="#grades">Grading explained</a></li><li><a href="#lookup">Score ID lookup</a></li><li><a href="#faq">Warranty</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="#faq">Help centre</a></li><li><a href="#faq">Shipping</a></li><li><a href="#faq">7-day returns</a></li><li><a href="#faq">Contact us</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Harrington Recommerce · Concept by Hvesmar Studio · Not a live store</span>
+      <div class="pay"><em>FPX</em><em>Touch 'n Go eWallet</em><em>GrabPay</em><em>DuitNow</em><em>Visa / Mastercard</em><em>Instalments</em></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Presenter pill: pitch navigation only, remove for production -->
+<nav class="presenter" aria-label="Presentation">
+  <a class="home" href="../" aria-label="Presentation home"><svg><use href="#i-home"/></svg></a>
+  <span class="sep"></span>
+  <a href="../guide/"><span class="who">Hvesmar Studio concept ·</span> Brand guide <svg><use href="#i-arrow"/></svg></a>
+</nav>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

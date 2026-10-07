@@ -92,6 +92,15 @@ p{margin:0}
 .logo-tile{display:block;flex:none;width:132px;border-radius:10px;overflow:hidden;box-shadow:0 6px 16px -8px rgba(208,46,35,.6);transition:transform .3s var(--ease)}
 .logo-tile:hover{transform:rotate(-2deg) scale(1.03)}
 .logo-tile img{width:100%;height:auto}
+/* Nav wordmark: vector script, hand-written on load, erased on scroll (see app.js) */
+.brand{display:flex;align-items:center;flex:none;color:var(--red);padding:6px 4px;margin:-6px -4px;border-radius:8px;transition:color .25s}
+.brand:hover{color:var(--red-dark)}
+.brand:focus-visible{outline:2px solid var(--red);outline-offset:4px}
+.brand__logo{display:block;height:30px;width:auto;aspect-ratio:2056/517;overflow:visible}
+.brand__ink{fill:currentColor}
+.brand__ghost{fill:currentColor;opacity:0;transition:opacity .8s var(--ease)}
+.brand.is-live .brand__ghost{opacity:.1}
+.js .brand:not(.is-ready) .brand__pen{opacity:0}
 .nav__links{display:flex;gap:6px;margin-right:auto}
 .nav__links a{padding:8px 14px;border-radius:999px;font-size:15px;font-weight:500;color:#333;transition:background .2s,color .2s}
 .nav__links a:hover{background:rgba(26,26,26,.06);color:var(--ink)}
@@ -585,6 +594,7 @@ p{margin:0}
   .nav__inner{height:64px}
   .mobile-menu{inset:64px 0 auto 0}
   .logo-tile{width:108px}
+  .brand__logo{height:24px}
   .icon-btn{width:40px;height:40px}
   .hero{padding:32px 0 72px}
   .hero h1{font-size:clamp(44px,13vw,60px)}

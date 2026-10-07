@@ -10,6 +10,70 @@
   const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 10);
   onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
 
+  /* Hand-written nav wordmark.
+     Mask strokes follow the centreline of the script in writing order; animating their
+     dash offset "writes" the vector logo on load. Scrolling down un-writes it (end -> start),
+     scrubbed to scroll position; scrolling back up writes it in again. */
+  (function brandLogo() {
+    const brand = $('#brand');
+    if (!brand) return;
+    const ink = $('.brand__ink', brand);
+    const pens = $$('.brand__pen path', brand);
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || !pens.length || typeof pens[0].getTotalLength !== 'function') {
+      ink.removeAttribute('mask'); brand.classList.add('is-ready', 'is-live'); return;
+    }
+    const DELAY = 250, DUR = 2000;            // load write-on (ms)
+    const LIFT = 90;                          // pause for pen lifts, in path units
+    const ERASE_FROM = 40, ERASE_LEN = 1000;  // fully erased at ~1040px of scroll
+    const easeSine = (x) => -(Math.cos(Math.PI * x) - 1) / 2;
+    const clamp01 = (x) => Math.min(1, Math.max(0, x));
+
+    let total = 0;
+    const segs = pens.map((el, i) => {
+      const len = el.getTotalLength();
+      if (i && el.hasAttribute('data-lift')) total += LIFT;
+      const seg = { el, len, start: total };
+      total += len;
+      el.style.strokeDasharray = len + ' ' + (len + 2);
+      return seg;
+    });
+
+    let shown = -1, masked = true;
+    const draw = (p) => {
+      const useMask = p < 1;   // drop the mask entirely once complete: pixel-perfect vector logo
+      if (useMask !== masked) { masked = useMask; useMask ? ink.setAttribute('mask', 'url(#brandMask)') : ink.removeAttribute('mask'); }
+      if (Math.abs(p - shown) < 1e-4) return;
+      shown = p;
+      const t = p * total;
+      for (const s of segs) {
+        const f = Math.min(s.len, Math.max(0, t - s.start));
+        s.el.style.strokeDashoffset = s.len - f;
+        s.el.style.visibility = f > 0 ? 'visible' : 'hidden';
+      }
+    };
+
+    const scrollTarget = () => 1 - easeSine(clamp01((window.scrollY - ERASE_FROM) / ERASE_LEN));
+    let tgt = scrollTarget(), cur = tgt, t0 = null, loadP = 0, raf = 0, last = 0;
+    const tick = (now) => {
+      raf = 0;
+      if (t0 === null) t0 = now + DELAY;
+      const dt = last ? Math.min(64, now - last) : 16.7;
+      last = now;
+      loadP = easeSine(clamp01((now - t0) / DUR));
+      cur += (tgt - cur) * (1 - Math.pow(0.84, dt / 16.7));   // gentle follow, frame-rate independent
+      if (Math.abs(tgt - cur) < 5e-4) cur = tgt;
+      draw(Math.min(loadP, cur));
+      if (loadP >= 1) brand.classList.add('is-live');           // faint ghost shows once erasing is possible
+      if (loadP < 1 || cur !== tgt) raf = requestAnimationFrame(tick); else last = 0;
+    };
+    const kick = () => { if (!raf) raf = requestAnimationFrame(tick); };
+    window.addEventListener('scroll', () => { tgt = scrollTarget(); kick(); }, { passive: true });
+    draw(0);
+    brand.classList.add('is-ready');
+    kick();
+  })();
+
   /* Mobile menu */
   const menuBtn = $('#menuBtn'), menu = $('#mobileMenu');
   menuBtn.addEventListener('click', () => {

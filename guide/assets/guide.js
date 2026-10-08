@@ -1,5 +1,8 @@
 (function(){
-  const S=[...document.querySelectorAll('section.s')];
+  // Overview vs full: slides with data-hidden are skipped unless the guide is opened with ?full=1
+  const FULL=document.documentElement.classList.contains('full');
+  if(FULL) document.querySelectorAll('[data-part-full]').forEach(e=>{e.dataset.part=e.dataset.partFull;});
+  const S=[...document.querySelectorAll('section.s')].filter(s=>FULL||!s.hasAttribute('data-hidden'));
   const total=S.length, pad=n=>String(n).padStart(2,'0');
   // footers
   S.forEach((s,i)=>{
@@ -32,6 +35,14 @@
     list.addEventListener('click',e=>{const a=e.target.closest('a');if(a){toc.classList.remove('open');}});
   }
   S.forEach((s,i)=>{ if(!s.id) s.id='s'+(i+1); else { const a=document.createElement('a'); a.id='s'+(i+1); s.prepend(a);} });
+  // Part links (top bar + contents cards) jump to the first visible slide of their part
+  document.querySelectorAll('a[data-part]').forEach(a=>{const t=S.find(s=>s.dataset.part===a.dataset.part); if(t) a.setAttribute('href','#'+t.id);});
+  // Overview: contents cards list the visible slides of each part with their numbers
+  if(!FULL) document.querySelectorAll('ul[data-toc-part]').forEach(ul=>{
+    const items=S.map((s,i)=>[s,i]).filter(([s])=>s.dataset.part===ul.dataset.tocPart&&!/^part\d/.test(s.id)&&s.dataset.noft===undefined);
+    ul.classList.add('toc-gen');
+    ul.innerHTML=items.map(([s,i])=>'<li><span class="toc-n">'+pad(i+1)+'</span>'+s.dataset.title.replace(/&/g,'&amp;')+'</li>').join('');
+  });
   const btn=document.getElementById('tocbtn');
   if(btn){btn.onclick=()=>toc.classList.toggle('open'); toc.addEventListener('click',e=>{if(e.target===toc||e.target.classList.contains('x'))toc.classList.remove('open')});}
   // current tracking

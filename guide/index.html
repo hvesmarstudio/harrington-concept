@@ -3,8 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Harrington · Brand Guide, Social Strategy & Ideas to Scale · Hvesmar Studio</title>
+<title>Harrington · Brand Guide, Social Strategy & Roadmap · Hvesmar Studio</title>
 <link rel="stylesheet" href="assets/guide.css">
+<!--
+  OVERVIEW MODE (Oct 2026): this guide is trimmed to an 18-slide overview for the first meeting.
+  Slides not in the overview are HIDDEN, not deleted: their <section> carries a `data-hidden` attribute.
+  - To re-enable a slide permanently: remove `data-hidden` from its <section> in .guide-work/src and run build.sh.
+  - To see every slide with full numbering: open the guide with ?full=1 (e.g. guide/?full=1).
+  Text that differs between modes uses .ov-only / .full-only; data-part-full holds the full-mode part label.
+  Numbering, footers, contents, counter, progress and keyboard nav are computed from visible slides in guide.js.
+-->
+<script>if(/[?&]full=1(&|$)/.test(location.search)){document.documentElement.classList.add('full');document.title='Harrington · Brand Guide, Social Strategy & Ideas to Scale · Hvesmar Studio';}</script>
+<style>
+html:not(.full) section.s[data-hidden]{display:none!important}
+html.full .ov-only,html:not(.full) .full-only{display:none!important}
+i.ov-only,i.full-only{font-style:inherit}
+ul.toc-gen li{padding-left:0;margin:.45rem 0}ul.toc-gen li:before{display:none}
+.toc-n{font-family:var(--m);font-weight:600;font-size:.82em;opacity:.7;margin-right:.55em}
+</style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -52,11 +68,11 @@
 </svg>
 
 <nav class="nav">
-  <a class="brand" href="#s1"><img src="assets/logo-red.svg" alt="Harrington"><span>Brand guide · Content · Growth</span></a>
+  <a class="brand" href="#s1"><img src="assets/logo-red.svg" alt="Harrington"><span>Brand guide · Content · <i class="ov-only">Roadmap</i><i class="full-only">Growth</i></span></a>
   <div class="parts">
     <a href="#part1" data-part="Brand guide"><b>01</b>Brand guide</a>
     <a href="#part2" data-part="Social strategy"><b>02</b>Social strategy</a>
-    <a href="#part3" data-part="Ideas to scale"><b>03</b>Ideas to scale</a>
+    <a href="#part3" data-part="Roadmap" data-part-full="Ideas to scale"><b>03</b><i class="ov-only">Roadmap</i><i class="full-only">Ideas to scale</i></a>
   </div>
   <div class="right">
     <a class="lk" href="../">← Cover</a>
@@ -77,7 +93,7 @@
   <div style="flex:1;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:3rem">
    <div>
     <img src="assets/logo-white.svg" alt="Harrington" style="width:44rem;margin:-1rem 0 2.6rem -0.6rem">
-    <h1 class="display" style="font-size:4.6rem;max-width:52rem">Brand guide proposal, social content strategy &amp; ideas to scale.</h1>
+    <h1 class="display" style="font-size:4.6rem;max-width:52rem">Brand guide proposal, social content strategy &amp; <i class="ov-only">roadmap</i><i class="full-only">ideas to scale</i>.</h1>
     <p class="lead" style="margin-top:1.6rem;font-size:1.5rem"><b style="color:#fff">Pre-loved tech, properly proven.</b> Every device tested, graded and backed by Harrington Certified.</p>
    </div>
    <div style="position:relative;height:34rem">
@@ -92,7 +108,7 @@
    </div>
   </div>
   <div style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid rgba(255,255,255,.35);padding-top:1.2rem;margin-bottom:-1.6rem">
-   <div class="p">Part 1 · Brand guide &nbsp;&nbsp; Part 2 · Social content strategy &nbsp;&nbsp; Part 3 · Ideas to scale</div>
+   <div class="p">Part 1 · Brand guide &nbsp;&nbsp; Part 2 · Social content strategy &nbsp;&nbsp; Part 3 · <i class="ov-only">Roadmap</i><i class="full-only">Ideas to scale</i></div>
    <div class="mono" style="font-size:.78rem;opacity:.8">Use ← → or PageDown to navigate · C for contents</div>
   </div>
  </div>
@@ -102,17 +118,17 @@
 <section class="s" data-title="What's inside">
  <div class="f">
   <div class="hd"><div><div class="eb">What's inside</div><h2>One brand, one proof system,<br>one plan to grow it.</h2></div>
-  <p class="lead">A proposal for how Harrington looks, sounds and earns trust, then how it shows up on social and where it can scale next.</p></div>
+  <p class="lead"><i class="ov-only">A proposal for who Harrington is and how it earns trust, then how it shows up on social and the roadmap to launch and grow.</i><i class="full-only">A proposal for how Harrington looks, sounds and earns trust, then how it shows up on social and where it can scale next.</i></p></div>
   <div class="g3 body" style="gap:1.6rem">
-   <a href="#part1" class="card rd" style="text-decoration:none;display:flex;flex-direction:column">
+   <a href="#part1" data-part="Brand guide" class="card rd" style="text-decoration:none;display:flex;flex-direction:column">
     <div class="big-n" style="font-size:6rem">01</div><h3 style="margin:1.2rem 0 .8rem;font-size:1.9rem">Brand guide proposal</h3>
-    <ul class="clean" style="font-size:1.1rem"><li>The pivot story &amp; brand foundations</li><li>Competitive landscape &amp; positioning</li><li>Personality &amp; voice</li><li>Logo, colour, type, imagery, graphic devices</li><li><b style="color:#fff">Harrington Certified system</b></li><li>Touchpoints, packaging to marketplace</li></ul></a>
-   <a href="#part2" class="card dk" style="text-decoration:none;display:flex;flex-direction:column">
+    <ul data-toc-part="Brand guide" class="clean" style="font-size:1.1rem"><li>The pivot story &amp; brand foundations</li><li>Competitive landscape &amp; positioning</li><li>Personality &amp; voice</li><li>Logo, colour, type, imagery, graphic devices</li><li><b style="color:#fff">Harrington Certified system</b></li><li>Touchpoints, packaging to marketplace</li></ul></a>
+   <a href="#part2" data-part="Social strategy" class="card dk" style="text-decoration:none;display:flex;flex-direction:column">
     <div class="big-n" style="font-size:6rem;color:#fff">02</div><h3 style="margin:1.2rem 0 .8rem;font-size:1.9rem">Social content strategy</h3>
-    <ul class="clean"><li>Platform roles, IG to TikTok Shop</li><li>Five content pillars</li><li>Signature series</li><li>Mock posts in the brand style</li><li>Launch plan &amp; first 90 days</li><li>4-week calendar, cadence, KPIs</li></ul></a>
-   <a href="#part3" class="card" style="text-decoration:none;color:var(--ink);display:flex;flex-direction:column">
-    <div class="big-n" style="font-size:6rem;color:var(--red)">03</div><h3 style="margin:1.2rem 0 .8rem;font-size:1.9rem">Ideas to scale</h3>
-    <ul class="clean"><li>Trade-in, buyback &amp; upgrade programmes</li><li>Harrington Care, BNPL options</li><li>B2B, education &amp; campus</li><li>Pop-ups, loyalty &amp; referral</li><li>Category expansion &amp; roadmap</li><li>Proposed next steps</li></ul></a>
+    <ul data-toc-part="Social strategy" class="clean"><li>Platform roles, IG to TikTok Shop</li><li>Five content pillars</li><li>Signature series</li><li>Mock posts in the brand style</li><li>Launch plan &amp; first 90 days</li><li>4-week calendar, cadence, KPIs</li></ul></a>
+   <a href="#part3" data-part="Roadmap" data-part-full="Ideas to scale" class="card" style="text-decoration:none;color:var(--ink);display:flex;flex-direction:column">
+    <div class="big-n" style="font-size:6rem;color:var(--red)">03</div><h3 style="margin:1.2rem 0 .8rem;font-size:1.9rem"><i class="ov-only">Roadmap</i><i class="full-only">Ideas to scale</i></h3>
+    <ul data-toc-part="Roadmap" class="clean"><li>Trade-in, buyback &amp; upgrade programmes</li><li>Harrington Care, BNPL options</li><li>B2B, education &amp; campus</li><li>Pop-ups, loyalty &amp; referral</li><li>Category expansion &amp; roadmap</li><li>Proposed next steps</li></ul></a>
   </div>
  </div>
 </section>
@@ -123,12 +139,13 @@
   <div class="big-n" style="font-size:20rem;opacity:.16;position:absolute;right:4rem;top:6rem;color:#fff">01</div>
   <div class="eb">Part 1</div>
   <h1 class="display" style="margin-top:1.4rem;font-size:8rem">Brand guide<br>proposal.</h1>
-  <p class="lead" style="margin-top:2rem;max-width:44rem">Who Harrington is, how it looks and sounds, and the certification system at the centre of the brand.</p>
+  <p class="lead" style="margin-top:2rem;max-width:44rem"><i class="ov-only">Who Harrington is, what it stands for, and the certification system at the centre of the brand.</i><i class="full-only">Who Harrington is, how it looks and sounds, and the certification system at the centre of the brand.</i></p>
  </div>
 </section>
 
 <!-- 04 PIVOT -->
-<section class="s" data-part="Brand guide" data-title="The pivot story">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Brand guide" data-title="The pivot story">
  <div class="f">
   <div class="hd"><div><div class="eb">The pivot story</div><h2>From a shelf of e-readers<br>to a home for proven tech.</h2></div>
   <p class="lead">No website and no Instagram yet. That's a clean slate: Harrington can launch with a complete, consistent system from day one.</p></div>
@@ -189,7 +206,7 @@
 <section class="s white" data-part="Brand guide" data-title="Competitive landscape">
  <div class="f">
   <div class="hd"><div><div class="eb">The landscape</div><h2>Where people buy pre-owned<br>tech today.</h2></div>
-  <p class="lead">Described in general, publicly verifiable terms. Sources on the final page. Harrington doesn't need to out-shout anyone, just out-prove them.</p></div>
+  <p class="lead">Described in general, publicly verifiable terms. <span class="full-only">Sources on the final page. </span>Harrington doesn't need to out-shout anyone, just out-prove them.</p></div>
   <div class="g4 body" style="gap:1.2rem">
    <div class="card" style="display:flex;flex-direction:column"><div class="mono xs">REGIONAL SPECIALIST</div><h3 style="margin:.5rem 0 .8rem;font-size:1.6rem">CompAsia</h3><p class="p">Sells second-hand devices in Malaysia online, with a strong focus on Apple and Samsung, leading with warranty and device-check messaging.</p><hr class="l" style="margin-top:auto"><p class="sm"><b>Lesson:</b> warranty and checks are now table stakes for the category.</p></div>
    <div class="card" style="display:flex;flex-direction:column"><div class="mono xs">GLOBAL MARKETPLACE</div><h3 style="margin:.5rem 0 .8rem;font-size:1.6rem">Back Market</h3><p class="p">Founded in Paris in 2014; a marketplace connecting buyers with vetted professional refurbishers. Its grades describe cosmetic condition, with devices guaranteed fully functional.</p><hr class="l" style="margin-top:auto"><p class="sm"><b>Lesson:</b> a clear, named grading system makes refurbished feel mainstream.</p></div>
@@ -202,7 +219,8 @@
 </section>
 
 <!-- 08 POSITIONING MAP -->
-<section class="s" data-part="Brand guide" data-title="Positioning map">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Brand guide" data-title="Positioning map">
  <div class="f">
   <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:4rem;height:100%">
    <div style="display:flex;flex-direction:column">
@@ -247,7 +265,8 @@
 </section>
 
 <!-- 10 VOICE -->
-<section class="s" data-part="Brand guide" data-title="Voice: do / don't & sample lines">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Brand guide" data-title="Voice: do / don't & sample lines">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Voice</div><h2>Say it like it is.<br>Kindly.</h2></div>
   <p class="lead">Primarily English, with light Bahasa Malaysia touches where they feel natural. Specific beats superlative, every time.</p></div>
@@ -274,7 +293,8 @@
 </section>
 
 <!-- 11 LOGO -->
-<section class="s white" data-part="Brand guide" data-title="Logo: primary versions">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s white" data-part="Brand guide" data-title="Logo: primary versions">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Logo</div><h2>The script is the signature.</h2></div>
   <p class="lead">We keep the wordmark the client already loves, now as a clean master vector. Red is home; white is its everyday partner. Next step: the full logo kit (lockups, favicon and app icon, social avatar, minimum-size cut).</p></div>
@@ -292,7 +312,8 @@
 </section>
 
 <!-- 12 LOGO RULES -->
-<section class="s" data-part="Brand guide" data-title="Logo: clear space, minimum size, don'ts">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Brand guide" data-title="Logo: clear space, minimum size, don'ts">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Logo rules</div><h2>Give it room. Keep it true.</h2></div></div>
   <div class="body" style="display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:1.5rem">
@@ -318,7 +339,8 @@
 </section>
 
 <!-- 13 COLOUR -->
-<section class="s white" data-part="Brand guide" data-title="Colour palette">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s white" data-part="Brand guide" data-title="Colour palette">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Colour</div><h2>Confident red. Calm everything else.</h2></div>
   <p class="lead">Harrington Red is sampled directly from the client's logo file. Paper and white do the heavy lifting so red always lands with impact.</p></div>
@@ -341,7 +363,8 @@
 </section>
 
 <!-- 14 TYPE -->
-<section class="s" data-part="Brand guide" data-title="Typography">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Brand guide" data-title="Typography">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Typography</div><h2>Bold headlines. Easy reading.<br>Proof in monospace.</h2></div>
   <p class="lead">Three free, open-source Google Fonts families, identical across the landing page, social and print.</p></div>
@@ -355,7 +378,8 @@
 </section>
 
 <!-- 15 ICONS & PHOTOGRAPHY -->
-<section class="s white" data-part="Brand guide" data-title="Iconography & photography">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s white" data-part="Brand guide" data-title="Iconography & photography">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Iconography &amp; photography</div><h2>Honest objects. Real moments.</h2></div>
   <p class="lead">Line icons with rounded joins at a 2.4 px weight. Photography that shows the real unit, true to colour, on Paper.</p></div>
@@ -377,7 +401,8 @@
 </section>
 
 <!-- 16 GRAPHIC DEVICES -->
-<section class="s" data-part="Brand guide" data-title="Graphic devices">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Brand guide" data-title="Graphic devices">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Graphic devices</div><h2>Four building blocks of proof.</h2></div>
   <p class="lead">Reusable across product pages, packaging and social. Together they become Harrington's visual signature.</p></div>
@@ -400,7 +425,8 @@
 </section>
 
 <!-- 18 HOW IT WORKS -->
-<section class="s" data-part="Brand guide" data-title="Certified: how it works">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Brand guide" data-title="Certified: how it works">
  <div class="f">
   <div class="hd"><div><div class="eb">Harrington Certified · Process</div><h2>Five steps from intake<br>to "siap".</h2></div>
   <p class="lead">Proposed workflow. The checklist in step 3 is written per category, so a drone is tested like a drone and an e-reader like an e-reader.</p></div>
@@ -487,7 +513,8 @@
 </section>
 
 <!-- 22 INSPECTION REPORT -->
-<section class="s" data-part="Brand guide" data-title="Mock inspection report">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Brand guide" data-title="Mock inspection report">
  <div class="f" style="display:grid;grid-template-columns:1fr 1.15fr;gap:4rem;align-items:start">
   <div style="display:flex;flex-direction:column;height:100%">
    <div class="eb">Mock inspection report</div><h2>Every device gets its own paperwork.</h2>
@@ -529,7 +556,8 @@
 </section>
 
 <!-- 23 SCORE ID EVERYWHERE -->
-<section class="s white" data-part="Brand guide" data-title="Score ID on product, packaging & social">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s white" data-part="Brand guide" data-title="Score ID on product, packaging & social">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Score ID in the wild</div><h2>Same ID, every touchpoint.</h2></div>
   <p class="lead">The chip is the thread that ties the physical device to its digital proof.</p></div>
@@ -571,7 +599,8 @@
 </section>
 
 <!-- 25 WEB, MARKETPLACE, BOOTH -->
-<section class="s white" data-part="Brand guide" data-title="Touchpoints: website, marketplace, booth">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s white" data-part="Brand guide" data-title="Touchpoints: website, marketplace, booth">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Touchpoints · Digital &amp; physical</div><h2>Website, marketplaces, booth.</h2></div>
   <p class="lead">One system everywhere. The landing page concept being presented alongside this guide uses the exact same tokens. <a href="../landing/" style="color:var(--red);font-weight:600">View it ↗</a></p></div>
@@ -622,7 +651,8 @@
 </section>
 
 <!-- 28 PILLARS -->
-<section class="s white" data-part="Social strategy" data-title="Content pillars">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s white" data-part="Social strategy" data-title="Content pillars">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Content pillars</div><h2>Five pillars, all pointing to proof.</h2></div>
   <p class="lead">Suggested starting mix in brackets, to rebalance once we see what the audience saves and shares.</p></div>
@@ -637,7 +667,8 @@
 </section>
 
 <!-- 29 SIGNATURE SERIES -->
-<section class="s" data-part="Social strategy" data-title="Signature series">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Social strategy" data-title="Signature series">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Signature series</div><h2>Six repeatable formats<br>people come back for.</h2></div>
   <p class="lead">Named series make content easier to produce weekly, and easier for the algorithm and the audience to recognise.</p></div>
@@ -653,7 +684,8 @@
 </section>
 
 <!-- 30 MOCK REELS -->
-<section class="s white" data-part="Social strategy" data-title="Mock posts: short video covers">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s white" data-part="Social strategy" data-title="Mock posts: short video covers">
  <div class="f" style="display:grid;grid-template-columns:.75fr 1.5fr;gap:3rem">
   <div style="display:flex;flex-direction:column">
    <div class="eb">Mock posts · Short video</div><h2>Thumb-stopping, on brand.</h2>
@@ -696,7 +728,8 @@
 </section>
 
 <!-- 31 MOCK SQUARES -->
-<section class="s white" data-part="Social strategy" data-title="Mock posts: feed & carousel">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s white" data-part="Social strategy" data-title="Mock posts: feed & carousel">
  <div class="f">
   <div class="hd" style="margin-bottom:1.8rem"><div><div class="eb">Mock posts · Feed &amp; carousel</div><h2>A grid that looks like a brand,<br>not a bazaar.</h2></div>
   <p class="lead">4:5 feed posts. Paper, ink and red rotate so the profile grid stays calm and recognisable. <span class="ex">Example prices</span></p></div>
@@ -735,13 +768,14 @@
   <div class="body" style="display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:1.2rem">
    <div class="card" style="display:flex;flex-direction:column;gap:.8rem"><div style="display:flex;justify-content:space-between"><span class="num">PHASE 0</span><span class="mono xs">2–3 WEEKS BEFORE</span></div><h3 style="font-size:1.8rem">Pre-launch teaser</h3><p class="mono xs" style="color:var(--red)">"SOMETHING CERTIFIED IS COMING."</p><ul class="clean"><li>Reserve handles on every platform; bio + link to waitlist</li><li>Reveal the red, the script and the seal in 3 teaser posts</li><li>"Guess the score" Score ID teasers</li><li>Behind-the-scenes of the testing bench</li><li>Seed 5–10 local creators with devices to grade</li><li>Waitlist perk: first look at launch stock</li></ul></div>
    <div class="card rd" style="display:flex;flex-direction:column;gap:.8rem"><div style="display:flex;justify-content:space-between"><span class="num">PHASE 1</span><span class="mono xs" style="color:#fff">LAUNCH MONTH</span></div><h3 style="font-size:1.8rem">"Properly proven." campaign</h3><p class="mono xs" style="color:#fff">HERO: A 30–45s FILM, FROM INTAKE TO UNBOXING</p><ul class="clean"><li>Hero film + cut-downs across TikTok, IG, FB</li><li>Grade It EP 01–04, one per week</li><li>Marketplace stores live with full listing system</li><li>Launch offer framed as a trade-in bonus (terms TBC)</li><li>Creator content goes live in week 1–2</li><li>Paid social to waitlist look-alikes and interests</li></ul></div>
-   <div class="card dk" style="display:flex;flex-direction:column;gap:.8rem"><div style="display:flex;justify-content:space-between"><span class="num">PHASE 2</span><span class="mono xs" style="color:#aaa">DAYS 31–90</span></div><h3 style="font-size:1.8rem">Build the habit</h3><p class="mono xs" style="color:#ff8a80">ALWAYS-ON SERIES + COMMUNITY</p><ul class="clean"><li>All six series on a weekly rhythm</li><li>First Shopee / TikTok Shop live selling</li><li>#ProperlyProven UGC prompt in every box</li><li>Campus ambassador pilot at 1–2 universities</li><li>First pop-up trade-in day in a Klang Valley mall</li><li>Monthly review: double down on what's saved and shared</li></ul></div>
+   <div class="card dk" style="display:flex;flex-direction:column;gap:.8rem"><div style="display:flex;justify-content:space-between"><span class="num">PHASE 2</span><span class="mono xs" style="color:#aaa">DAYS 31–90</span></div><h3 style="font-size:1.8rem">Build the habit</h3><p class="mono xs" style="color:#ff8a80">ALWAYS-ON SERIES + COMMUNITY</p><ul class="clean"><li><i class="ov-only">Weekly series (Grade It, Score ID reveals) on a set rhythm</i><i class="full-only">All six series on a weekly rhythm</i></li><li>First Shopee / TikTok Shop live selling</li><li>#ProperlyProven UGC prompt in every box</li><li>Campus ambassador pilot at 1–2 universities</li><li>First pop-up trade-in day in a Klang Valley mall</li><li>Monthly review: double down on what's saved and shared</li></ul></div>
   </div>
  </div>
 </section>
 
 <!-- 33 CALENDAR -->
-<section class="s" data-part="Social strategy" data-title="Sample 4-week content calendar">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Social strategy" data-title="Sample 4-week content calendar">
  <div class="f">
   <div class="hd" style="margin-bottom:1.2rem"><div><div class="eb">Sample calendar · Launch month</div><h2>Four weeks, at a glance.</h2></div>
   <div style="display:flex;gap:1rem;flex-wrap:wrap;max-width:36rem;justify-content:flex-end" class="xs"><span><i class="dot bp1"></i>Proof</span><span><i class="dot bp2"></i>Trade-in</span><span><i class="dot bp3"></i>Tips &amp; culture</span><span><i class="dot bp4"></i>Value</span><span><i class="dot bp5"></i>Community</span></div></div>
@@ -764,7 +798,7 @@
 <section class="s white" data-part="Social strategy" data-title="Cadence, captions & hashtags">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Cadence &amp; copy style</div><h2>Consistent beats constant.</h2></div>
-  <p class="lead">A starting cadence a small team can sustain, adjusted monthly against the KPIs.</p></div>
+  <p class="lead">A starting cadence a small team can sustain, adjusted monthly against <i class="ov-only">results</i><i class="full-only">the KPIs</i>.</p></div>
   <div class="body" style="display:grid;grid-template-columns:1fr 1.05fr;gap:2.4rem">
    <table class="t">
     <tr><th>Platform</th><th>Suggested cadence</th><th>Focus</th></tr>
@@ -786,7 +820,8 @@
 </section>
 
 <!-- 35 KPIs -->
-<section class="s" data-part="Social strategy" data-title="KPIs to track">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Social strategy" data-title="KPIs to track">
  <div class="f">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Measurement</div><h2>What we'll track.</h2></div>
   <p class="lead">No borrowed benchmarks: we set baselines in the first 30 days, then agree targets together for days 31–90.</p></div>
@@ -801,7 +836,8 @@
  </div>
 </section>
 <!-- 36 PART 3 DIVIDER -->
-<section class="s white" id="part3" data-part="Ideas to scale" data-title="Part 3 · Ideas to scale">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s white" id="part3" data-part="Roadmap" data-part-full="Ideas to scale" data-title="Part 3 · Ideas to scale">
  <div class="f" style="justify-content:center">
   <div class="big-n" style="font-size:20rem;position:absolute;right:4rem;top:6rem;color:var(--red);opacity:.12">03</div>
   <div class="eb">Part 3</div>
@@ -813,7 +849,8 @@
 </section>
 
 <!-- 37 IDEAS A -->
-<section class="s" data-part="Ideas to scale" data-title="Ideas: make switching easy">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Roadmap" data-part-full="Ideas to scale" data-title="Ideas: make switching easy">
  <div class="f lg">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Ideas to scale · Customer programmes</div><h2>Make switching to Harrington<br>the easy choice.</h2></div>
   <p class="lead">Programmes that lower the cost and the risk of each purchase, and lock in the next trade-in.</p></div>
@@ -828,7 +865,8 @@
 </section>
 
 <!-- 38 IDEAS B -->
-<section class="s white" data-part="Ideas to scale" data-title="Ideas: grow reach & revenue">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s white" data-part="Roadmap" data-part-full="Ideas to scale" data-title="Ideas: grow reach & revenue">
  <div class="f lg">
   <div class="hd" style="margin-bottom:1.5rem"><div><div class="eb">Ideas to scale · Growth engines</div><h2>Eight engines for reach and supply.</h2></div>
   <p class="lead">Some bring customers, some bring stock. The best ones (B2B, campus, trade-in days) bring both.</p></div>
@@ -846,7 +884,8 @@
 </section>
 
 <!-- 39 CHANNEL STRATEGY -->
-<section class="s" data-part="Ideas to scale" data-title="Marketplace + own site strategy">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s" data-part="Roadmap" data-part-full="Ideas to scale" data-title="Marketplace + own site strategy">
  <div class="f lg">
   <div class="hd" style="margin-bottom:1.8rem"><div><div class="eb">Channel strategy</div><h2>Rent reach. Own the relationship.</h2></div>
   <p class="lead">Start where buyers already are, and use every order to invite them into Harrington's own world.</p></div>
@@ -867,7 +906,8 @@
 </section>
 
 <!-- 40 CATEGORY EXPANSION -->
-<section class="s white" data-part="Ideas to scale" data-title="Category expansion in phases">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s white" data-part="Roadmap" data-part-full="Ideas to scale" data-title="Category expansion in phases">
  <div class="f lg">
   <div class="hd" style="margin-bottom:1.6rem"><div><div class="eb">Category expansion</div><h2>Earn the right to each category.</h2></div>
   <p class="lead">A category opens only when its test checklist, parts supply, warranty terms and support knowledge are ready. Suggested order, to be confirmed with the client.</p></div>
@@ -886,9 +926,9 @@
 </section>
 
 <!-- 41 ROADMAP -->
-<section class="s" data-part="Ideas to scale" data-title="Phased roadmap">
+<section class="s" data-part="Roadmap" data-part-full="Ideas to scale" data-title="Phased roadmap">
  <div class="f lg">
-  <div class="hd" style="margin-bottom:1.5rem"><div><div class="eb">Roadmap</div><h2>Phase 1 · 2 · 3.</h2></div>
+  <div class="hd" style="margin-bottom:1.5rem"><div><div class="eb"><i class="ov-only">Part 3 · Roadmap</i><i class="full-only">Roadmap</i></div><h2>Phase 1 · 2 · 3.</h2></div>
   <p class="lead">Indicative timing for discussion; each phase starts when the previous one's foundations are working.</p></div>
   <div class="body" style="display:grid;grid-template-columns:11rem 1fr 1fr 1fr;grid-template-rows:auto 1fr 1fr 1fr;gap:.6rem">
    <div></div>
@@ -912,7 +952,8 @@
 </section>
 
 <!-- 42 NEXT STEPS -->
-<section class="s red" data-part="Ideas to scale" data-title="Next steps with Hvesmar Studio">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s red" data-part="Roadmap" data-part-full="Ideas to scale" data-title="Next steps with Hvesmar Studio">
  <div class="f lg">
   <div class="hd" style="margin-bottom:2rem"><div><div class="eb">Proposed next steps · Hvesmar Studio</div><h2>Let's build it, properly.</h2></div>
   <p class="lead">Four workstreams Hvesmar Studio proposes to deliver, in order. Scope and timing to agree after this meeting.</p></div>
@@ -929,7 +970,8 @@
 </section>
 
 <!-- 43 SOURCES -->
-<section class="s white" data-part="Ideas to scale" data-title="Sources & notes">
+<!-- HIDDEN in the 18-slide overview. Re-enable: delete data-hidden below (or view the guide with ?full=1). -->
+<section data-hidden class="s white" data-part="Roadmap" data-part-full="Ideas to scale" data-title="Sources & notes">
  <div class="f">
   <div class="hd" style="margin-bottom:1.8rem"><div><div class="eb">Sources &amp; notes</div><h2>How to read this document.</h2></div></div>
   <div class="body" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem">
@@ -942,7 +984,7 @@
 </section>
 
 <!-- 44 CLOSE -->
-<section class="s red" data-part="Ideas to scale" data-title="Terima kasih" data-noft>
+<section class="s red" data-part="Roadmap" data-part-full="Ideas to scale" data-title="Terima kasih" data-noft>
  <div class="f" style="align-items:center;justify-content:center;text-align:center">
   <img src="assets/logo-white.svg" style="width:38rem" alt="Harrington">
   <h2 style="font-size:4.4rem;margin-top:2.6rem">Pre-loved tech, properly proven.</h2>

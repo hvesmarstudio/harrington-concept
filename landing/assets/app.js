@@ -120,10 +120,10 @@
   /* ---------- Score ID lookup (demo data) ---------- */
   const REPORTS = {
     'HC-2610-04821': {
-      device: 'Kindle Paperwhite', meta: '11th Gen · 16GB · Black · Serial ending 7Q2K', score: 94, label: 'Excellent',
-      func: 'A', cos: 'Pristine', battery: '96%', date: '02 Oct 2026', tech: 'Tech 07', checks: '52/52',
+      device: 'Kindle Paperwhite', meta: '11th Gen · 16GB · Black · Serial ending 7Q2K', score: 92, label: 'Excellent',
+      func: 'A', cos: 'Clean', battery: '91%', date: '02 Oct 2026', tech: 'Tech 07', checks: '52/52',
       rows: [
-        ['Battery health', '96% · 41 cycles', 'ok'], ['E-ink display', 'No dead pixels', 'ok'],
+        ['Battery health', '91% · 143 cycles', 'ok'], ['E-ink display', 'No dead pixels', 'ok'],
         ['Frontlight', '24/24 levels even', 'ok'], ['Touch grid', '100% response', 'ok'],
         ['Power button', 'Pass', 'ok'], ['USB-C port', 'Charge + data', 'ok'],
         ['Wi-Fi', '2.4 / 5 GHz', 'ok'], ['Storage', '16 GB · healthy', 'ok'],
@@ -264,4 +264,16 @@
     $('#newsMsg').innerHTML = '<b>Terima kasih!</b> You\'re on the list. First dibs incoming.';
     e.target.reset();
   });
+})();
+
+/* Beyond the device carousel: buttons scroll one card; native scroll-snap + keyboard (focus track, arrow keys) */
+(function(){
+  var t=document.getElementById('beyondTrack'); if(!t) return;
+  var btns=document.querySelectorAll('.beyond__btn');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function step(){var c=t.querySelector('.bcard');return c?c.getBoundingClientRect().width+parseFloat(getComputedStyle(t).columnGap||20):t.clientWidth;}
+  function sync(){var max=t.scrollWidth-t.clientWidth-2;btns.forEach(function(b){b.disabled=b.dataset.dir<0?t.scrollLeft<=2:t.scrollLeft>=max;});}
+  btns.forEach(function(b){b.addEventListener('click',function(){t.scrollBy({left:step()*b.dataset.dir,behavior:reduce?'auto':'smooth'});});});
+  t.addEventListener('scroll',function(){requestAnimationFrame(sync);},{passive:true});
+  window.addEventListener('resize',sync);sync();
 })();
